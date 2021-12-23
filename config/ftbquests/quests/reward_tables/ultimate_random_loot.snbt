@@ -1,0 +1,117 @@
+{
+	id: "2388A49079243AB4"
+	order_index: 3
+	title: "Ultimate Random Loot"
+	icon: "ironchest:diamond_chest"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "powah:reactor_nitro", count: 36, weight: 16 }
+		{
+			xp_levels: 15
+			type: "xp_levels"
+			weight: 16
+		}
+		{
+			xp_levels: 30
+			type: "xp_levels"
+			weight: 12
+		}
+		{
+			xp_levels: 100
+			type: "xp_levels"
+			weight: 5
+		}
+		{ item: "mekanism:creative_fluid_tank", weight: 2 }
+		{ item: "create:creative_motor", weight: 8 }
+		{ item: "storagedrawers:creative_storage_upgrade", weight: 12 }
+		{ item: "iceandfire:creative_dragon_meal", weight: 5 }
+		{ item: "rats:rat_upgrade_combined_creative", weight: 4 }
+		{ item: "storagedrawers:creative_vending_upgrade", weight: 4 }
+		{ item: "minecraft:netherite_ingot", count: 8, weight: 10 }
+		{ item: "minecraft:nether_star", count: 4, weight: 4 }
+		{
+			item: {
+				id: "mekanism:creative_fluid_tank"
+				Count: 1b
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: 0b
+							stored: {
+								FluidName: "industrialforegoing:sludge"
+								Amount: 2147483647
+							}
+						}]
+					}
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "mekanism:creative_fluid_tank"
+				Count: 1b
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: 0b
+							stored: {
+								FluidName: "immersivepetroleum:oil"
+								Amount: 2147483647
+							}
+						}]
+					}
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "mekanism:creative_fluid_tank"
+				Count: 1b
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: 0b
+							stored: {
+								FluidName: "immersiveengineering:creosote"
+								Amount: 2147483647
+							}
+						}]
+					}
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "mekanism:creative_chemical_tank"
+				Count: 1b
+				tag: {
+					mekData: {
+						GasTanks: [{
+							Tank: 0b
+							stored: {
+								gasName: "mekanism:steam"
+								amount: 9223372036854775807L
+							}
+						}]
+					}
+				}
+			}
+			weight: 4
+		}
+		{ item: "pneumaticcraft:creative_compressor", weight: 2 }
+		{
+			item: {
+				id: "botania:laputa_shard"
+				Count: 1b
+				tag: {
+					level: 19
+				}
+			}
+			weight: 4
+		}
+	]
+}

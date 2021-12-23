@@ -1,0 +1,516 @@
+{
+	id: "1ECC057B8177C4A0"
+	group: "0C5896690659A687"
+	order_index: 4
+	filename: "occultism"
+	title: "Occultism"
+	icon: "occultism:ritual_dummy/custom_ritual"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.0d
+			y: 0.5d
+			subtitle: "Sometimes, I dream about cheese"
+			description: ["Punch grass to find Demon's Dream seeds and plant them to harvest the fruit."]
+			id: "02EF10BC7D6097ED"
+			tasks: [
+				{
+					id: "438A909A52D88885"
+					type: "item"
+					item: "occultism:datura_seeds"
+					count: 4L
+				}
+				{
+					id: "10FB34F82B24B134"
+					type: "item"
+					item: "occultism:datura"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "5D78C6338B5D6BBF"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["Made by tossing saplings into spirit fire"]
+			dependencies: ["53384A6199E29328"]
+			id: "0ADAB58364D7E4E0"
+			tasks: [{
+				id: "3DB8228446AEAF1D"
+				type: "item"
+				item: "occultism:otherworld_sapling"
+			}]
+			rewards: [{
+				id: "556C6EB6DD83E115"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["Made by tossing andesite into spirit fire."]
+			dependencies: ["53384A6199E29328"]
+			id: "5B3DFEA61ACBCD59"
+			tasks: [{
+				id: "589CF6A29D4416FC"
+				type: "item"
+				item: "occultism:otherstone"
+				count: 32L
+			}]
+			rewards: [{
+				id: "12B39D34D6EDAD41"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: ["Made by tossing black dye into spirit fire"]
+			dependencies: ["53384A6199E29328"]
+			id: "165ABD5D3574DD5A"
+			tasks: [{
+				id: "3A0D1802E2783EB6"
+				type: "item"
+				item: "occultism:purified_ink"
+			}]
+			rewards: [{
+				id: "32AD03272CBBD5F3"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			subtitle: "Hot fruit"
+			description: ["Burn a piece of Demon's Dream fruit on a burnable block (netherrack, log, charcoal block) to create a Spirit Fire. This will convert certain blocks or items thrown into it into their otherworldly counterpart. Also, doesn't damage the player like normal fire."]
+			dependencies: ["02EF10BC7D6097ED"]
+			id: "53384A6199E29328"
+			tasks: [{
+				id: "699C4A4971F6F0F8"
+				type: "item"
+				item: {
+					id: "minecraft:flint_and_steel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7176D321E34C190F"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["Made by tossing diamonds into spirit fire"]
+			dependencies: ["53384A6199E29328"]
+			id: "2719C93A60691AD8"
+			tasks: [{
+				id: "677C5AD0E19F7FB3"
+				type: "item"
+				item: "occultism:spirit_attuned_gem"
+			}]
+			rewards: [{
+				id: "2A6C1D36495DDEBA"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			subtitle: "How Divine"
+			description: ["Allows you to find Occultism blocks in the world (that can only be seen with the Third Eye effect from eating Demon's Dream fruit or wearing Occultism goggles)."]
+			dependencies: ["2719C93A60691AD8"]
+			id: "496363CCA1BBB9F5"
+			tasks: [{
+				id: "1803DE5141BCE493"
+				type: "item"
+				item: {
+					id: "occultism:divination_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "653AEAC848AF1205"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			subtitle: "Otherworldly"
+			description: ["Can only be harvested while under the Third Eye effect from eating Demon's Dream fruit (or wearing appropriate goggles)."]
+			dependencies: ["0ADAB58364D7E4E0"]
+			id: "77D652539486D8C3"
+			tasks: [{
+				id: "22CB963034373A98"
+				type: "item"
+				item: "occultism:otherworld_log"
+			}]
+			rewards: [{
+				id: "22343D425DA63BAF"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			subtitle: "Chop 'em up"
+			description: ["Use this to kill passive mobs to obtain additional drops, such as tallow."]
+			dependencies: ["02EF10BC7D6097ED"]
+			id: "65E0FC1884793789"
+			tasks: [{
+				id: "42517757357EC0AC"
+				type: "item"
+				item: {
+					id: "occultism:butcher_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FB377BB357AF0E5"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Tallow"
+			x: -2.0d
+			y: -2.5d
+			subtitle: "Phat"
+			description: ["Harvested from pigs, cows, horses, sheep, or llamas using the butcher's knife."]
+			dependencies: ["65E0FC1884793789"]
+			id: "1B5B740163D32338"
+			tasks: [{
+				id: "2D0D60D2B1274FB6"
+				type: "item"
+				title: "Any #forge:tallow"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tallow"
+					}
+				}
+			}]
+			rewards: [{
+				id: "45ED32C4156593AC"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			subtitle: "Candle in the wind"
+			description: ["Made from tallow and used in rituals."]
+			dependencies: ["1B5B740163D32338"]
+			id: "0257B76D357458A4"
+			tasks: [{
+				id: "7BCE04E66AE96C91"
+				type: "item"
+				item: "occultism:candle_white"
+			}]
+			rewards: [{
+				id: "5CD2DA7A4967AAF7"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			subtitle: "Rising from the ashes"
+			description: ["Made by tossing otherworldly logs into spirit fire."]
+			dependencies: ["77D652539486D8C3"]
+			id: "4D7A83B435BD647C"
+			tasks: [{
+				id: "47CA0CB6FFBA06A4"
+				type: "item"
+				item: "occultism:otherworld_ashes"
+				count: 3L
+			}]
+			rewards: [{
+				id: "411AEFBA262EFD59"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			description: ["Made by smelting otherstone"]
+			dependencies: ["5B3DFEA61ACBCD59"]
+			id: "653247192150AA2F"
+			tasks: [{
+				id: "5EE8159457045252"
+				type: "item"
+				item: "occultism:burnt_otherstone"
+				count: 3L
+			}]
+			rewards: [{
+				id: "6BEC2BCB7B52FAF6"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			subtitle: "Sidewalk stuff"
+			description: ["Made by tossing an impure chalk into spirit fire."]
+			dependencies: [
+				"653247192150AA2F"
+				"4D7A83B435BD647C"
+			]
+			id: "6700ACB4C8BDC507"
+			tasks: [{
+				id: "580F7779C5A308CE"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "32C49808161FB149"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			subtitle: "Cleanup"
+			description: ["Easily erases misplaced chalk runes."]
+			dependencies: ["6700ACB4C8BDC507"]
+			id: "6A0D4D8C6C7A3065"
+			tasks: [{
+				id: "085E619556768EC8"
+				type: "item"
+				item: "occultism:brush"
+			}]
+			rewards: [{
+				id: "25A76173594DBA81"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			dependencies: ["02EF10BC7D6097ED"]
+			id: "37B82114D77B95EE"
+			tasks: [{
+				id: "476385DB55259F41"
+				type: "item"
+				item: "occultism:dictionary_of_spirits"
+			}]
+			rewards: [{
+				id: "2D35D62CA4C065A4"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			subtitle: "Gilded Sacrifice"
+			description: ["Place in the middle of a ritual. Place non-golden bowls in the ritual area for holding other items to be sacrificed."]
+			dependencies: ["6700ACB4C8BDC507"]
+			id: "2E2C57535F8E8696"
+			tasks: [{
+				id: "69A7D6F2C569E41A"
+				type: "item"
+				item: "occultism:golden_sacrificial_bowl"
+			}]
+			rewards: [{
+				id: "2F52C1303CA9A54E"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.5d
+			subtitle: "Bound and down"
+			description: ["Bind this book to a Foliot demon by crafting it with the Dictionary of Spirits guide book. This will bind it to a random demon."]
+			dependencies: ["6700ACB4C8BDC507"]
+			id: "082F2FFAB1ABD479"
+			tasks: [{
+				id: "357DD993445B08A6"
+				type: "item"
+				item: "occultism:book_of_binding_foliot"
+			}]
+			rewards: [{
+				id: "46CAA9B1A48B81C5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			dependencies: ["082F2FFAB1ABD479"]
+			id: "60D1466218B63255"
+			tasks: [{
+				id: "4E04E709F7B949E2"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "69E10074D4187BC8"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 10.0d
+			y: -3.0d
+			subtitle: "Perma-fruit vision"
+			description: ["Perform the appropriate ritual to get infused lenses, then craft those lenses into goggles you can wear. These can be placed in a Curio slot to avoid taking up an armor slot for them."]
+			dependencies: ["60D1466218B63255"]
+			id: "1CAE4BFF70E76E94"
+			tasks: [{
+				id: "38FBF3A745D37FC0"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3BCD9C132D1D2970"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.5d
+			dependencies: ["60D1466218B63255"]
+			id: "57EE70E8A4747B71"
+			tasks: [{
+				id: "77AB2A79340257DB"
+				type: "item"
+				item: {
+					id: "occultism:chalk_purple"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "43333394829A7AA3"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 14.0d
+			y: -1.5d
+			dependencies: ["57EE70E8A4747B71"]
+			id: "6A35A00D099936C3"
+			tasks: [{
+				id: "1451FDC4A404D59D"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4FFC3204FCEF152D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.0d
+			subtitle: "Brittle but effective"
+			description: ["Initially, the only way to mine Iesnium ore found in netherrack with the goggles. This pickaxe has very low durability, so try to only use it for iesnium ore and make an iesnium pickaxe as soon as possible."]
+			dependencies: ["57EE70E8A4747B71"]
+			id: "696E8ED8B4A693BD"
+			tasks: [{
+				id: "133616F97FBEBC1D"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Zurcrader"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "52705F38F47D2201"
+				type: "loot"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.0d
+			subtitle: "Soul Train"
+			description: ["Soul gems allow you to capture and transport mobs as an item, making it easier to transport your sacrifices or for holding demons (their decay is paused while in the soul gem)."]
+			dependencies: ["57EE70E8A4747B71"]
+			id: "00F54FD68D372477"
+			tasks: [{
+				id: "69E0B94C8E986866"
+				type: "item"
+				item: {
+					id: "occultism:soul_gem"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5E1BE3BABDD1300C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

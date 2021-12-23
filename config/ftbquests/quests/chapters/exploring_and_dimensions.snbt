@@ -1,0 +1,431 @@
+{
+	id: "598ECF37B58D4784"
+	group: "7604FE20C6A7FFA7"
+	order_index: 2
+	filename: "exploring_and_dimensions"
+	title: "Exploring and Dimensions"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Walk 1000 miles"
+			x: -10.0d
+			y: -7.0d
+			subtitle: "Gotta get your steps in!"
+			id: "671EE3ACEEEE5CAA"
+			tasks: [{
+				id: "0861C2E0416B2A00"
+				type: "stat"
+				icon: {
+					id: "minecraft:leather_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:walk_one_cm"
+				value: 1609345
+			}]
+			rewards: [
+				{
+					id: "27ED753866DC519C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "634E6E402E198488"
+					type: "random"
+					table_id: 8463138893034427203L
+				}
+			]
+		}
+		{
+			title: "Visit the Nether"
+			x: -10.0d
+			y: -2.5d
+			subtitle: "A quick stroll through Hell"
+			id: "5B8ACD02CD98D03F"
+			tasks: [{
+				id: "7CAAAB0A94839FFC"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "47586F088D2FF4B4"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Visit the End"
+			x: -10.0d
+			y: 2.0d
+			subtitle: "Don't stare into the void"
+			id: "6EBDE09313DE824F"
+			tasks: [{
+				id: "0EC3BA43664E4353"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "145DA9314C503F8C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			subtitle: "Dungeons and Dargons"
+			dependencies: ["6EBDE09313DE824F"]
+			id: "4BFDA0579C83DD0B"
+			tasks: [{
+				id: "266D314CD1F032E5"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "14DF6700A1A831F1"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 16
+				}
+				{
+					id: "50CD11F5F06B6B60"
+					type: "item"
+					item: "minecraft:end_crystal"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -1.5d
+			subtitle: "2 Hot 2 Handle"
+			dependencies: ["5B8ACD02CD98D03F"]
+			id: "5A58DB3309D74B56"
+			tasks: [{
+				id: "557BE3616EC022EA"
+				type: "kill"
+				icon: "tconstruct:blaze_head"
+				entity: "minecraft:blaze"
+				value: 10L
+			}]
+			rewards: [{
+				id: "562EA0CEB0A54074"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 16
+			}]
+		}
+		{
+			x: -8.0d
+			y: -3.5d
+			subtitle: "Nasty Witherses"
+			dependencies: ["5B8ACD02CD98D03F"]
+			id: "41A31682E0D787D4"
+			tasks: [{
+				id: "6D60D4DD9A81DF56"
+				type: "kill"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "minecraft:wither_skeleton"
+				value: 10L
+			}]
+			rewards: [{
+				id: "15EAEF086535DF24"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 9
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			subtitle: "Slendermen"
+			dependencies: ["6EBDE09313DE824F"]
+			id: "42E452600B82AB0A"
+			tasks: [{
+				id: "362F107D25892D87"
+				type: "kill"
+				icon: "tconstruct:enderman_head"
+				entity: "minecraft:enderman"
+				value: 10L
+			}]
+			rewards: [{
+				id: "797FECB54A8D9BF9"
+				type: "item"
+				item: "minecraft:ender_pearl"
+				count: 16
+			}]
+		}
+		{
+			x: -10.0d
+			y: 4.0d
+			subtitle: "Pop goes the weasel"
+			dependencies: ["6EBDE09313DE824F"]
+			id: "57691A8C70148367"
+			tasks: [{
+				id: "61100A38BF9AEB72"
+				type: "kill"
+				icon: "minecraft:shulker_box"
+				entity: "minecraft:shulker"
+				value: 10L
+			}]
+			rewards: [
+				{
+					id: "71C2AEA2D188CB33"
+					type: "item"
+					item: "minecraft:shulker_shell"
+					count: 8
+				}
+				{
+					id: "3D0BBE4F06F88243"
+					type: "item"
+					item: "minecraft:purpur_block"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Visit Twilight Forest"
+			x: -5.0d
+			y: -7.0d
+			subtitle: "In the fading light, they can't focus..."
+			description: ["To make the portal, make a 2x2 pool of water, surround with flowers on all sides, and then drop in one diamond."]
+			id: "77639FD88D52EA6D"
+			tasks: [{
+				id: "0F93D3B1DBF8C15B"
+				type: "dimension"
+				dimension: "twilightforest:twilightforest"
+			}]
+			rewards: [{
+				id: "19E1FAC9C6B72ED3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Magic Map"
+			x: -3.5d
+			y: -7.0d
+			subtitle: "Find your way"
+			description: ["The magic map will show you points of interest in the Twilight Forest. You may need more than one if exploring a large area."]
+			dependencies: ["77639FD88D52EA6D"]
+			id: "75460D7893B4F772"
+			tasks: [{
+				id: "2B61D9092ADCD675"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+			rewards: [{
+				id: "590707E8D9ACD8F5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.0d
+			subtitle: "Evil snek"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["75460D7893B4F772"]
+			id: "4C3A429596298833"
+			tasks: [{
+				id: "5E5BCE36E63B74EC"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [{
+				id: "424B20B5FC5769E7"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			subtitle: "The Lich King"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["4C3A429596298833"]
+			id: "6A75D25D1DDA316C"
+			tasks: [{
+				id: "065DF1F2D9DF40D8"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+			}]
+			rewards: [{
+				id: "49232751CFE1EF8D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			subtitle: "Chargin' Shroom Bois"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["6A75D25D1DDA316C"]
+			id: "195C1127301835AA"
+			tasks: [{
+				id: "65F2AB8723CA43C6"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [{
+				id: "15A623DB46C73245"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.0d
+			subtitle: "Triple Threat"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["195C1127301835AA"]
+			id: "2438CA362FB7BEE2"
+			tasks: [{
+				id: "0D9C6C76381199E1"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+			rewards: [{
+				id: "2BD0A67E158FE3D5"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.5d
+			subtitle: "The Dark Knight Rises"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["2438CA362FB7BEE2"]
+			id: "18DEE0A8B9563AA8"
+			tasks: [{
+				id: "2F5FE567199DEFA5"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+			}]
+			rewards: [{
+				id: "796DD1C6797C0FA8"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -5.5d
+			subtitle: "*Screaming Noises*"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["18DEE0A8B9563AA8"]
+			id: "4C3A519AEAC86FA5"
+			tasks: [{
+				id: "74910D8159B5A68A"
+				type: "item"
+				item: "twilightforest:ur_ghast_trophy"
+			}]
+			rewards: [{
+				id: "07A5587B6939D5C5"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			subtitle: "Sasquatch!"
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["4C3A519AEAC86FA5"]
+			id: "39C5263162E21875"
+			tasks: [{
+				id: "433B6BCC87EDB9B1"
+				type: "item"
+				item: "twilightforest:yeti_trophy"
+			}]
+			rewards: [{
+				id: "0DBE5D9524A3C289"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			subtitle: "Let it Go..."
+			description: ["Progress in the Twilight Forest is tied directly to the achievements. If working as a team, remember to let all players hold the trophy at least once to trigger the achievement and allow them to progress. "]
+			dependencies: ["39C5263162E21875"]
+			id: "4B9CF33FB25FD088"
+			tasks: [{
+				id: "7053E661D61BD54B"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+			}]
+			rewards: [{
+				id: "57BC8DD4281AC410"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Visit the Everbright"
+			x: -5.0d
+			y: -2.5d
+			id: "6942473076F944DC"
+			tasks: [{
+				id: "67FA2DE0C9DE0A4A"
+				type: "dimension"
+				dimension: "blue_skies:everbright"
+			}]
+			rewards: [{
+				id: "7C715D96749B9B2B"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Visit the Everdawn"
+			x: -3.0d
+			y: -2.5d
+			id: "7269B2B91A815D30"
+			tasks: [{
+				id: "004534677228444F"
+				type: "dimension"
+				dimension: "blue_skies:everdawn"
+			}]
+			rewards: [{
+				id: "4DDDD2F33F18765F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			hide_text_until_complete: true
+			id: "024F91BECFCB4A4D"
+			tasks: [{
+				id: "7A4697E3CED08F6A"
+				type: "advancement"
+				icon: {
+					id: "minecraft:diamond_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				advancement: "betterdungeons:all_dungeons"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "0290CFB98C20E62F"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

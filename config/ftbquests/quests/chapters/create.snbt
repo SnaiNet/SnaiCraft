@@ -1,0 +1,766 @@
+{
+	id: "57D0DEDE1D740E1E"
+	group: "52B64564C2528367"
+	order_index: 1
+	filename: "create"
+	title: "Create"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.5d
+			y: -1.0d
+			id: "47CF0623989BAF6D"
+			tasks: [{
+				id: "22D0522FC44CB303"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16L
+			}]
+			rewards: [{
+				id: "13A7FAFB4F8D8B21"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			id: "4FC67E2AD0EDB1A7"
+			tasks: [
+				{
+					id: "0665AB4FFDED2751"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "31B6F6E25D0CA6C6"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [{
+				id: "599A8B514E2E05F1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			id: "04AD575AB58B1F65"
+			tasks: [{
+				id: "1A84D54B976B1FD9"
+				type: "item"
+				item: "create:shaft"
+			}]
+			rewards: [{
+				id: "57FB78A520FD5AB6"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			id: "18A6ED5D0727592A"
+			tasks: [{
+				id: "1601CE995B034F38"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "68BF38739144C7FC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			id: "027A735996116B37"
+			tasks: [{
+				id: "775B4D5A2F80C1A5"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "41652C442AC716B2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			id: "59CFF7DC981D8199"
+			tasks: [{
+				id: "156264FDDE289C4F"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "62A92B38F27627FE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			id: "632165778A8FD8BC"
+			tasks: [{
+				id: "5171260A7D7549EC"
+				type: "item"
+				item: "create:gearbox"
+			}]
+			rewards: [{
+				id: "630B99C3BE0006CA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			id: "755A4D68FF386BE2"
+			tasks: [{
+				id: "00734ECCA0D16DCC"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "404582829B8234CA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			id: "0353219FE70A330B"
+			tasks: [{
+				id: "0348FD9C2511E9D9"
+				type: "item"
+				item: "create:gearshift"
+			}]
+			rewards: [{
+				id: "1E7EFBF1002BAA09"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			id: "6A8562D9EFD513F8"
+			tasks: [{
+				id: "62F2544E7187C0DC"
+				type: "item"
+				item: "create:speedometer"
+			}]
+			rewards: [{
+				id: "4F14CD4E6C5E90FD"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			id: "2C72991D011B965B"
+			tasks: [{
+				id: "4E43D692A97C0227"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+			rewards: [{
+				id: "0D78D3B89E84D9B9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			id: "35C92952DDC825F4"
+			tasks: [{
+				id: "4932D02AF0EE8535"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "6A46C8A06D91F8C3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			id: "67E164CA3E07CB6D"
+			tasks: [{
+				id: "47EE0A60B39AFE05"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "72FA3F7EA7BAF228"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			id: "0DEF2C6BD37BEB2E"
+			tasks: [
+				{
+					id: "7BBD78103DB3C3BE"
+					type: "item"
+					item: {
+						id: "create:sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "29C0A7A2AEB54245"
+					type: "item"
+					item: "create:rose_quartz"
+				}
+			]
+			rewards: [{
+				id: "3F469889A303C2B1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			id: "50B00248031A9FFA"
+			tasks: [{
+				id: "50DEBDFB0A71FC89"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+			rewards: [{
+				id: "53E7228230440FCA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			id: "29BA9A8F0ABC4F01"
+			tasks: [
+				{
+					id: "28E7D021C546B7B7"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "3A36674FD1434C7F"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "1C6448805018765C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			id: "2FDEFE6F442ED80B"
+			tasks: [{
+				id: "46DC3724B3FB137E"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "105D13E1717D6807"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			id: "4DC08B0CF7176C9B"
+			tasks: [{
+				id: "5277CC7C33F326F8"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "60075CD3F6344E6F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.0d
+			description: [
+				"Create is tough to capture in a quest line because it is more about freeform building of contraptions. With this in mind, I'm opting to not define dependencies on these quests and allow you to progress as you see fit. The progression is still generally from left to right, but you may opto to skip some tasks in favor of others."
+				""
+				"It's highly recommended to watch some tutorials for ideas and examples."
+			]
+			id: "2575180730457A14"
+			tasks: [{
+				id: "316B4E0C17DA386B"
+				type: "checkmark"
+				title: "Create is complicated..."
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			id: "44F1115D187DEC7D"
+			tasks: [{
+				id: "0F65244A6F6EF137"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "0F194BCC79296F66"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			id: "1824E54214E4410A"
+			tasks: [{
+				id: "31EA483E1DE8C977"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "0B3AEC3D0DE33B59"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			id: "373CE7D936302A9F"
+			tasks: [{
+				id: "190049E1F3BD3058"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "6279A6808312E41B"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			id: "56D9D7A35C748127"
+			tasks: [{
+				id: "70C1B0F1484177F2"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+			rewards: [{
+				id: "02A3CAAD736077F8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.0d
+			id: "1E791FE08829F1D7"
+			tasks: [{
+				id: "5B52F9139523151E"
+				type: "item"
+				item: "create:sail_frame"
+			}]
+			rewards: [{
+				id: "50EBA6D5FAE0642B"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			id: "0DB743D53F3ADA62"
+			tasks: [{
+				id: "79731A764CFF83C1"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5108E7361D60784F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			id: "5B585F69728C78E2"
+			tasks: [{
+				id: "0FA3802074255805"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+			rewards: [{
+				id: "7CAB76EF1DFECC3A"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			id: "134F7EEF156379F9"
+			tasks: [{
+				id: "4DACBFD14D49DD52"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "39C55B2AC10ABE47"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			id: "3213821E26AF4CC0"
+			tasks: [{
+				id: "4A76856B28DAB50E"
+				type: "item"
+				item: "create:furnace_engine"
+			}]
+			rewards: [{
+				id: "60F56DB86A663312"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			id: "49255A316204FDE8"
+			tasks: [{
+				id: "2652C18E250AD0C9"
+				type: "item"
+				item: "create:flywheel"
+			}]
+			rewards: [{
+				id: "00FF7FCCEE97C79A"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			id: "60BFA5DC62BDAAC1"
+			tasks: [{
+				id: "740F52437F8B133B"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [{
+				id: "44C6BD76BCFBF806"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 10.5d
+			y: -2.5d
+			id: "7F7AF3E6EB7F4AEB"
+			tasks: [{
+				id: "5987BD7BDF82A189"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [{
+				id: "61ADF12AD4D525F5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			id: "3B8C7C5FCAC61D88"
+			tasks: [{
+				id: "1A338064E623659B"
+				type: "item"
+				item: "create:fluid_pipe"
+			}]
+			rewards: [{
+				id: "278EE7CD19CDF740"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			id: "569D8360F61CDB4D"
+			tasks: [{
+				id: "0DC3BEE3B4335DFB"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+			rewards: [{
+				id: "012047B13BB62BC3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			id: "7CF92831401EEA51"
+			tasks: [{
+				id: "62BCC687AF8379B7"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [{
+				id: "12B56C076D32B713"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			id: "51ECBBAD7CCB9863"
+			tasks: [
+				{
+					id: "2647BCFD53A0C92D"
+					type: "item"
+					item: "create:fluid_valve"
+				}
+				{
+					id: "0C92B271521975FA"
+					type: "item"
+					title: "Any #create:valve_handles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "create:valve_handles"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "392AF5EB83F6A3D1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			id: "4D329F3B3E4C01CF"
+			tasks: [{
+				id: "41F3A3A7EA0A3716"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "1CE4E041BA69663C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.0d
+			id: "22904EEC4B9E5A96"
+			tasks: [{
+				id: "16188E899F34C08E"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "60B098BC3A10C475"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.0d
+			id: "1BCC06CFA6AF06DA"
+			tasks: [{
+				id: "580D0914E14FDFA9"
+				type: "item"
+				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "4D6A5A64C9831740"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.5d
+			id: "0C0FB048B747E753"
+			tasks: [{
+				id: "11E9D3AB372F80FE"
+				type: "item"
+				item: "create:portable_fluid_interface"
+			}]
+			rewards: [{
+				id: "1814B28F03D46C61"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			id: "3709D3B552EF8942"
+			tasks: [{
+				id: "0FA0FC15133DDCA6"
+				type: "item"
+				item: "create:chute"
+			}]
+			rewards: [{
+				id: "60948FDACBD70FE9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.0d
+			id: "2A15E40CB0A04D07"
+			tasks: [{
+				id: "1984EF1CC53B3A39"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "47A34BD675BAC51D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 12.5d
+			y: -2.5d
+			id: "65E26FC608D581F7"
+			tasks: [{
+				id: "29062F0C292D8AF8"
+				type: "item"
+				item: "create:mechanical_piston"
+			}]
+			rewards: [{
+				id: "629B989FEFEEE364"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 14.5d
+			y: -2.5d
+			id: "6CC8FFA3B7F5DB3E"
+			tasks: [{
+				id: "13689FDD5079FC7A"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "3666F94EE3E38464"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 14.5d
+			y: -1.0d
+			id: "648EB45FAD73C090"
+			tasks: [{
+				id: "2301B3A44C658447"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+			rewards: [{
+				id: "3E5E9E9BD0049314"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 14.5d
+			y: 0.5d
+			id: "60EC1FDD2391B47E"
+			tasks: [{
+				id: "1E8DD393BF3744F7"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+			rewards: [{
+				id: "2C0C4D186EDAED33"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 16.5d
+			y: 0.5d
+			id: "38279AA20F5A045B"
+			tasks: [{
+				id: "67780756E1AFDF0E"
+				type: "item"
+				item: "create:radial_chassis"
+			}]
+			rewards: [{
+				id: "7A253C742FBFBC00"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 16.5d
+			y: -1.0d
+			id: "7E0C88962A63C7B3"
+			tasks: [{
+				id: "49F93CBB36AAC874"
+				type: "item"
+				item: "create:portable_storage_interface"
+			}]
+			rewards: [{
+				id: "3A65F97176BCC329"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}

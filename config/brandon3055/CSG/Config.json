@@ -1,0 +1,22 @@
+{
+  "inventory": {
+    "0:3": "{id:\"minecraft:stone_axe\",Count:1b,tag:{Damage:0}}",
+    "0:5": "{id:\"minecraft:stone_hoe\",Count:1b,tag:{Damage:0}}",
+    "0:4": "{id:\"minecraft:stone_sword\",Count:1b,tag:{Damage:0}}",
+    "0:1": "{id:\"minecraft:stone_pickaxe\",Count:1b,tag:{Damage:0}}",
+    "0:10": "{id:\"ftbquests:book\",Count:1b}",
+    "1:3": "{id:\"minecraft:leather_helmet\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;849427674,636570124,-1469920904,806282400]}}",
+    "0:0": "{id:\"minecraft:torch\",Count:32b}",
+    "1:2": "{id:\"minecraft:leather_chestplate\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;849427674,636570124,-1469920904,806282400]}}",
+    "1:1": "{id:\"minecraft:leather_leggings\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;849427674,636570124,-1469920904,806282400]}}",
+    "0:35": "{id:\"waystones:waystone\",Count:1b}",
+    "2:0": "{id:\"minecraft:shield\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;849427674,636570124,-1469920904,806282400]}}",
+    "0:6": "{id:\"akashictome:tome\",Count:1b,tag:{\"akashictome:data\":{tconstruct:{id:\"tconstruct:encyclopedia\",Count:1b},integratedtunnels:{id:\"integrateddynamics:on_the_dynamics_of_integration\",Count:1b},powah:{id:\"powah:book\",Count:1b},astralsorcery:{id:\"astralsorcery:tome\",Count:1b},blue_skies:{id:\"blue_skies:blue_journal\",Count:1b},pneumaticcraft:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"pneumaticcraft:book\"}},advancedperipherals:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"advancedperipherals:manual\"}},immersiveengineering:{id:\"immersiveengineering:manual\",Count:1b},naturesaura:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"naturesaura:book\"}},simpleplanes:{id:\"patchouli:guide_book\",Count:1b,tag:{\"patchouli:book\":\"simpleplanes:planes_book\"}},immersiverailroading:{id:\"immersiverailroading:item_manual\",Count:1b,tag:{}},botania:{id:\"botania:lexicon\",Count:1b},tmechworks:{id:\"tmechworks:book\",Count:1b},rftoolsbase:{id:\"rftoolsbase:manual\",Count:1b}}}}",
+    "1:0": "{id:\"minecraft:leather_boots\",Count:1b,tag:{Damage:0,AS_Amulet_Holder:[I;849427674,636570124,-1469920904,806282400]}}",
+    "0:7": "{id:\"farmersdelight:shepherds_pie\",Count:16b}",
+    "0:2": "{id:\"minecraft:stone_shovel\",Count:1b,tag:{Damage:0}}",
+    "0:9": "{id:\"tconstruct:materials_and_you\",Count:1b}",
+    "0:34": "{id:\"minecraft:sheep_spawn_egg\",Count:1b}"
+  },
+  "wipeBlacklist": []
+}

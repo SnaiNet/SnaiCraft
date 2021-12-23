@@ -1,0 +1,221 @@
+{
+	id: "702618E44EB54187"
+	group: "711E9D4C67639EA8"
+	order_index: 4
+	filename: "challenges_and_repeatables"
+	title: "Challenges and Repeatables"
+	icon: "miniutilities:kikoku"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basic Loot Box"
+			icon: "minecraft:chest"
+			x: -4.5d
+			y: -5.5d
+			shape: "pentagon"
+			subtitle: "This Quest Consumes Resources"
+			dependencies: ["2C50805EE5BB39EE"]
+			id: "5D012A3A7BDAA036"
+			tasks: [
+				{
+					id: "4E74964EC7CA9A11"
+					type: "item"
+					title: "Iron Opinium Core"
+					item: "miniutilities:iron_opinium_core"
+					count: 2L
+					consume_items: true
+				}
+				{
+					id: "2216EAEF08FD38D3"
+					type: "xp"
+					value: 5L
+					points: false
+				}
+			]
+			rewards: [
+				{
+					id: "7941EB64300343C6"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "719FCE34E468F809"
+					type: "custom"
+					title: "Reset Quest"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					team_reward: true
+				}
+			]
+		}
+		{
+			title: "Advanced Loot Box"
+			icon: "ironchest:iron_chest"
+			x: -4.5d
+			y: -4.0d
+			shape: "pentagon"
+			subtitle: "This Quest Consumes Resources"
+			dependencies: ["2C50805EE5BB39EE"]
+			id: "1E6327F1F2F633B3"
+			tasks: [
+				{
+					id: "69884F502078F99B"
+					type: "item"
+					title: "Diamond Opinium Core"
+					item: "miniutilities:diamond_opinium_core"
+					consume_items: true
+				}
+				{
+					id: "15ADA99FAC6075EC"
+					type: "xp"
+					value: 10L
+					points: false
+				}
+			]
+			rewards: [
+				{
+					id: "7EFC2C6DCE3EBA44"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "684A997999CCBFF3"
+					type: "custom"
+					title: "Reset Quest"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					team_reward: true
+				}
+			]
+		}
+		{
+			title: "Elite Loot Box"
+			icon: "ironchest:gold_chest"
+			x: -4.5d
+			y: -2.5d
+			shape: "pentagon"
+			subtitle: "This Quest Consumes Resources"
+			dependencies: ["2C50805EE5BB39EE"]
+			id: "4F50F3A8C8A38D6B"
+			tasks: [
+				{
+					id: "64D468FAC382C46C"
+					type: "item"
+					item: "miniutilities:netherite_opinium_core"
+					consume_items: true
+				}
+				{
+					id: "68C94D0E3C6B9B5B"
+					type: "xp"
+					value: 20L
+					points: false
+				}
+			]
+			rewards: [
+				{
+					id: "042A01A7B56EC633"
+					type: "random"
+					table_id: 8463138893034427203L
+				}
+				{
+					id: "7C379FA3E3485772"
+					type: "custom"
+					title: "Reset Quest"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					team_reward: true
+				}
+			]
+		}
+		{
+			title: "Ultimate Loot Box"
+			icon: "ironchest:diamond_chest"
+			x: -4.5d
+			y: -1.0d
+			shape: "pentagon"
+			subtitle: "This Quest Consumes Resources"
+			dependencies: ["2C50805EE5BB39EE"]
+			id: "5D14976B013D19BE"
+			tasks: [
+				{
+					id: "7C9342CEFF468355"
+					type: "item"
+					item: "miniutilities:the_final_opinium_core"
+					consume_items: true
+				}
+				{
+					id: "48242A8686096DE3"
+					type: "xp"
+					value: 30L
+					points: false
+				}
+			]
+			rewards: [
+				{
+					id: "6A981F5C44AD2DBC"
+					type: "random"
+					table_id: 2560477328574790324L
+				}
+				{
+					id: "7E227C725B59F80A"
+					type: "custom"
+					title: "Reset Quest"
+					icon: "thermal:machine_cycle_augment"
+					tags: ["reset"]
+					team_reward: true
+				}
+			]
+		}
+		{
+			x: -11.0d
+			y: -8.5d
+			subtitle: "The sword to end them all"
+			description: ["The Kikoku is a powerful late-game weapon that bypasses armor and does immense damage."]
+			id: "0C574A7CDB0D0DE2"
+			tasks: [{
+				id: "3DB05CC35B128D5F"
+				type: "item"
+				item: "miniutilities:kikoku"
+			}]
+			rewards: [
+				{
+					id: "0A241640487C8618"
+					type: "random"
+					table_id: 2560477328574790324L
+				}
+				{
+					id: "5FC124E3357E9D96"
+					type: "loot"
+					table_id: 8463138893034427203L
+				}
+				{
+					id: "354D5087E9267A05"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "4ACFD8FAF6D81304"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -3.5d
+			subtitle: "These Quests Consume Resources"
+			description: [
+				"These quests allow you to trade in resources in exchange for additional rolls of the 4 tiers of loot boxes available. These quests will consume the resources required and can be repeated as many times as you'd like."
+				""
+				"REMEMBER: Always claim the loot box before clicking the \"Reset Quest\" reward or you will lose your reward. if on a team, allow all players a chance to claim the reward before resetting."
+			]
+			id: "2C50805EE5BB39EE"
+			tasks: [{
+				id: "4D32984C53351E45"
+				type: "checkmark"
+				title: "Repeatable Quests"
+			}]
+		}
+	]
+}

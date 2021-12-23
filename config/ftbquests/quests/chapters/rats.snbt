@@ -1,0 +1,117 @@
+{
+	id: "790B2D1871458576"
+	group: "711E9D4C67639EA8"
+	order_index: 1
+	filename: "rats"
+	title: "Rats"
+	icon: "rats:cheese"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.5d
+			y: 0.0d
+			subtitle: "Cheesy does it"
+			description: ["To tame rats, you'll first need cheese. Cheese can be made by putting milk in a cauldron and waiting a minute or two for it to convert."]
+			id: "694B111E93BE5EC1"
+			tasks: [{
+				id: "346CE8AF7F615501"
+				type: "item"
+				item: "rats:block_of_cheese"
+			}]
+			rewards: [{
+				id: "5E8B821B59CE42C2"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			subtitle: "I'm gonna break my ratsy cage"
+			description: ["A multiblock structure that gives rats a place to be stored. Feel free to decorate too!"]
+			dependencies: ["694B111E93BE5EC1"]
+			id: "1F879E039EDE32CF"
+			tasks: [{
+				id: "60F612F8A936ECA0"
+				type: "item"
+				item: "rats:rat_cage"
+				count: 4L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			subtitle: "Go forth and multiply"
+			description: ["Once you get 2 rats in a cage, you can add a breeding lamp. This will cause baby rats to spawn in the cage (as long as there is room for them)."]
+			dependencies: ["1F879E039EDE32CF"]
+			id: "3E50E804CFE7933A"
+			tasks: [{
+				id: "4795733B95B1BD1E"
+				type: "item"
+				item: "rats:rat_breeding_lantern"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			subtitle: "The start of the upgrades"
+			description: ["Rats can do many many things. Start making upgrades for them to see what they can do."]
+			dependencies: ["1F879E039EDE32CF"]
+			id: "29B3A867638064F4"
+			tasks: [{
+				id: "11F3BF8AFA86F158"
+				type: "item"
+				item: "rats:rat_upgrade_basic"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["29B3A867638064F4"]
+			id: "25F092576AB801D6"
+			tasks: [{
+				id: "4665D3E7157411EA"
+				type: "item"
+				item: "rats:cheese_stick"
+			}]
+			rewards: [{
+				id: "605097B7A28916EA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["29B3A867638064F4"]
+			id: "702EE44268C07C97"
+			tasks: [{
+				id: "60D0C35B465B0AAB"
+				type: "item"
+				item: "rats:radius_stick"
+			}]
+			rewards: [{
+				id: "7622C9F14A32E446"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["29B3A867638064F4"]
+			id: "2ED4884B96E5D08C"
+			tasks: [{
+				id: "7164E729A1A510AE"
+				type: "item"
+				item: "rats:patrol_stick"
+			}]
+			rewards: [{
+				id: "3E5E18960EF15BC1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}

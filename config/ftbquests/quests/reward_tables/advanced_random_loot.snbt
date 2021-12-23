@@ -1,0 +1,192 @@
+{
+	id: "4EA3BD97A2AEF856"
+	order_index: 1
+	title: "Advanced Random Loot"
+	icon: "ironchest:iron_chest"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "minecraft:diamond_block", weight: 16 }
+		{ item: "ironchest:crystal_chest", weight: 8 }
+		{ item: "storagedrawers:oak_full_drawers_1", count: 4, weight: 8 }
+		{ item: "krate:krate_big", weight: 8 }
+		{ item: "minecraft:anvil", weight: 16 }
+		{ item: "minecraft:nether_quartz_ore", count: 16, weight: 32 }
+		{
+			xp_levels: 15
+			type: "xp_levels"
+			weight: 4
+		}
+		{ item: "mekanism:basic_universal_cable", count: 16, weight: 16 }
+		{ item: "emendatusenigmatica:steel_ingot", count: 4, weight: 24 }
+		{
+			xp_levels: 5
+			type: "xp_levels"
+			weight: 16
+		}
+		{
+			xp_levels: 1
+			type: "xp_levels"
+		}
+		{
+			item: {
+				id: "better_diving:diving_mask"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "better_diving:standard_o2_tank"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "better_diving:wetsuit_leggings"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 8
+		}
+		{
+			item: {
+				id: "better_diving:fins"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 8
+		}
+		{ item: "smallships:bop_hellbark_dhow", weight: 8 }
+		{ item: "apotheosis:hellshelf", count: 4, weight: 4 }
+		{ item: "minecraft:enchanting_table", weight: 8 }
+		{ item: "minecraft:lava_bucket", weight: 32 }
+		{ item: "mekanism:basic_mechanical_pipe", count: 16, weight: 16 }
+		{ item: "mekanism:basic_logistical_transporter", count: 16, weight: 16 }
+		{ item: "mekanismgenerators:wind_generator", weight: 8 }
+		{
+			item: {
+				id: "mekanism:basic_energy_cube"
+				Count: 1b
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "4000000"
+						}]
+					}
+				}
+			}
+			weight: 2
+		}
+		{ item: "minecraft:sea_lantern", count: 8, weight: 16 }
+		{ item: "sophisticatedbackpacks:backpack", weight: 16 }
+		{ item: "metalbarrels:obsidian_barrel", weight: 16 }
+		{
+			item: {
+				id: "tiab:timeinabottle"
+				Count: 1b
+				tag: {
+					timeData: { }
+				}
+			}
+		}
+		{ item: "twilightforest:firefly", count: 16, weight: 8 }
+		{ item: "twilightforest:cicada", count: 64, weight: 8 }
+		{
+			item: {
+				id: "cyclic:charm_torch_cave"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 8
+		}
+		{ item: "minecraft:nether_bricks", count: 32, weight: 16 }
+		{ item: "minecraft:soul_campfire", weight: 4 }
+		{ item: "botania:terraform_rod", weight: 4 }
+		{
+			item: {
+				id: "astralsorcery:illumination_wand"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			weight: 4
+		}
+		{ item: "industrialforegoing:mob_crusher" }
+		{ item: "industrialforegoing:plant_gatherer", weight: 4 }
+		{ item: "industrialforegoing:plant_sower", weight: 4 }
+		{ item: "thermal:device_water_gen", weight: 12 }
+		{ item: "industrialforegoing:mob_imprisonment_tool", weight: 16 }
+		{ item: "industrialforegoing:machine_frame_simple", weight: 8 }
+		{ item: "thermal:machine_frame", weight: 8 }
+		{ item: "rftoolsbase:machine_frame", weight: 8 }
+		{ item: "powah:solar_panel_blazing", weight: 8 }
+		{ item: "powah:energizing_rod_blazing", weight: 4 }
+		{ item: "powah:magmator_hardened", weight: 8 }
+		{ item: "mekanism:basic_control_circuit", count: 16, weight: 4 }
+		{ item: "mekanism:alloy_infused", count: 16, weight: 4 }
+		{ item: "mekanism:cardboard_box", weight: 8 }
+		{ item: "mekanism:advanced_chemical_tank" }
+		{
+			item: {
+				id: "mekanism:jetpack"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+					mekData: {
+						GasTanks: [{
+							Tank: 0b
+							stored: {
+								gasName: "mekanism:hydrogen"
+								amount: 24000L
+							}
+						}]
+					}
+				}
+			}
+		}
+		{ item: "create:polished_rose_quartz", count: 16, weight: 20 }
+		{ item: "create:andesite_alloy", count: 32, weight: 20 }
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 7s
+						id: "minecraft:fortune"
+					}]
+				}
+			}
+			weight: 4
+		}
+		{
+			item: {
+				id: "minecraft:enchanted_book"
+				Count: 1b
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s
+						id: "minecraft:mending"
+					}]
+				}
+			}
+			weight: 4
+		}
+	]
+}

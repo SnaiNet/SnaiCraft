@@ -1,0 +1,138 @@
+[
+  {
+    "name": "minecraft:coal",
+    "weight": 4,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:iron_chunk",
+    "weight": 3,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:gold_chunk",
+    "weight": 1,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:diamond_chunk",
+    "weight": 1,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:lapis_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:redstone_chunk",
+    "weight": 4,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:emerald_chunk",
+    "weight": 1,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:quartz_chunk",
+    "weight": 1,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:copper_chunk",
+    "weight": 3,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+ {
+    "name": "emendatusenigmatica:silver_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:lead_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+{
+    "name": "emendatusenigmatica:osmium_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+{
+    "name": "emendatusenigmatica:tin_chunk",
+    "weight": 3,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:nickel_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:uranium_chunk",
+    "weight": 1,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+{
+    "name": "emendatusenigmatica:zinc_chunk",
+    "weight": 2,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  },
+  {
+    "name": "emendatusenigmatica:aluminum_chunk",
+    "weight": 3,
+    "dimensions": [
+      "minecraft:overworld"
+    ],
+    "biomes": []
+  }
+]

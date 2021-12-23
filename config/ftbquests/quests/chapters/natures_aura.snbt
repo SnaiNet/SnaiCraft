@@ -1,0 +1,303 @@
+{
+	id: "3DCCC3E3925574EE"
+	group: "0C5896690659A687"
+	order_index: 3
+	filename: "natures_aura"
+	title: "Nature's Aura"
+	icon: "naturesaura:gold_leaf"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.0d
+			y: -0.5d
+			subtitle: "Fiber of our being"
+			description: ["Right-click fibers onto normal leaves to slowly convert them into golden leaves."]
+			id: "1EAE39D1B2BCD834"
+			tasks: [{
+				id: "0955F2A696E46447"
+				type: "item"
+				item: "naturesaura:gold_fiber"
+			}]
+			rewards: [
+				{
+					id: "51E66137F946BF2E"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "66B35ECAF435A9A1"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			subtitle: "24 carrots of gold!"
+			description: ["Obtained from harvesting leaves from a tree converted using brilliant fibers, these leaves are an essential crafting ingredient for many aspects of the mod."]
+			dependencies: ["1EAE39D1B2BCD834"]
+			id: "3BACF69F4159CB9F"
+			tasks: [{
+				id: "2253CE6889EF0087"
+				type: "item"
+				item: "naturesaura:gold_leaf"
+				count: 32L
+			}]
+			rewards: [{
+				id: "0CEFB8D10C495248"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			subtitle: "The dust of kings"
+			description: ["Made from gold leaves, this places much like redstone dust and is needed for performing rituals."]
+			dependencies: ["3BACF69F4159CB9F"]
+			id: "0984DDD4BA6028FE"
+			tasks: [{
+				id: "3663A10722C0E10E"
+				type: "item"
+				item: "naturesaura:gold_powder"
+				count: 16L
+			}]
+			rewards: [{
+				id: "3C4BA7D262ED9D7E"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Don't you take my sunshine away!"
+			description: ["Use a bottle and cork in the overworld to get fresh sunshine in a bottle."]
+			dependencies: ["3BACF69F4159CB9F"]
+			id: "73D834C3407EC1EE"
+			tasks: [{
+				id: "2D395B5A0588D669"
+				type: "item"
+				item: {
+					id: "naturesaura:aura_bottle"
+					Count: 1b
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "5ECBE04E223ED0B5"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			subtitle: "Wood needed"
+			description: ["Place in a circle for use in rituals (see guide book)."]
+			dependencies: ["3BACF69F4159CB9F"]
+			id: "4016D99D59971D86"
+			tasks: [{
+				id: "74F5C3BBEA40E284"
+				type: "item"
+				item: "naturesaura:wood_stand"
+				count: 8L
+			}]
+			rewards: [{
+				id: "3362E9E4485F3F82"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			subtitle: "Pink = Ancient"
+			description: ["Perform the ritual of the forest to get an ancient sapling. These trees will try to balance the aura around them, absorbing some of the negative effects."]
+			dependencies: [
+				"0984DDD4BA6028FE"
+				"4016D99D59971D86"
+			]
+			id: "3BE92C4C4EFC2121"
+			tasks: [{
+				id: "79FF172614412449"
+				type: "item"
+				item: "naturesaura:ancient_sapling"
+			}]
+			rewards: [{
+				id: "5D0ED0FF0FBAB1DD"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			icon: "naturesaura:nature_altar"
+			x: 1.0d
+			y: -0.5d
+			subtitle: "Now to use that Aura"
+			description: ["The natural altar uses nearby aura to convert items. See book for assembly details."]
+			dependencies: ["3BE92C4C4EFC2121"]
+			id: "166B2C7594937D65"
+			tasks: [
+				{
+					id: "7778D77022BAE22A"
+					type: "item"
+					item: "naturesaura:nature_altar"
+				}
+				{
+					id: "3EFEA297A14F7EE3"
+					type: "item"
+					item: "naturesaura:gold_brick"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "4D8C921A7289F5E8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["166B2C7594937D65"]
+			id: "1053F978DBA514EB"
+			tasks: [{
+				id: "14B621E1227DB7B9"
+				type: "item"
+				item: "naturesaura:infused_stone"
+				count: 16L
+			}]
+			rewards: [{
+				id: "7B58C2C36F7DB619"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["166B2C7594937D65"]
+			id: "2E168CD9471B0349"
+			tasks: [{
+				id: "605C288C43752E5D"
+				type: "item"
+				item: "naturesaura:infused_iron"
+				count: 16L
+			}]
+			rewards: [{
+				id: "0202E8CAFC75564C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			subtitle: "Cache money!"
+			description: ["Stores aura to be used by items in your inventory. Can be refilled at the natural altar."]
+			dependencies: [
+				"1053F978DBA514EB"
+				"2E168CD9471B0349"
+			]
+			id: "23CBD542BF286B1F"
+			tasks: [{
+				id: "24DE539E92C12C2D"
+				type: "item"
+				item: "naturesaura:aura_cache"
+			}]
+			rewards: [{
+				id: "7F5B57BE1C01F5B4"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Eye see you"
+			description: ["Shows you details about the aura in the environment around you. Use this to avoid burning too much aura and causing negative effects."]
+			dependencies: ["3BE92C4C4EFC2121"]
+			id: "4B78D204CF4F6EBE"
+			tasks: [{
+				id: "69DF90958AF5FCC0"
+				type: "item"
+				item: "naturesaura:eye"
+			}]
+			rewards: [{
+				id: "31E7A155F97F8DEB"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			subtitle: "Eye spy"
+			description: ["This is an upgrade to the environmental eye, allowing you to see more details about the environmental aura."]
+			dependencies: ["4B78D204CF4F6EBE"]
+			id: "105E44DE84975F7E"
+			tasks: [{
+				id: "41949FA6D4254FEC"
+				type: "item"
+				item: "naturesaura:eye_improved"
+			}]
+			rewards: [{
+				id: "7B35D0EE3CE2551F"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			subtitle: "Spoopy"
+			description: ["Using a bottle and cork in the nether will get you bottled ghosts."]
+			dependencies: ["73D834C3407EC1EE"]
+			id: "2505837555B20C25"
+			tasks: [{
+				id: "74818434BE9DC24E"
+				type: "item"
+				item: {
+					id: "naturesaura:aura_bottle"
+					Count: 1b
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
+				count: 8L
+			}]
+			rewards: [{
+				id: "169F32ECAB6F75DA"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			subtitle: "Furnaces for days"
+			description: ["Create this using the ritual of the forest and then place it on the side (or top) of a furnace for smelting without fuel (and faster too!)."]
+			dependencies: [
+				"2505837555B20C25"
+				"3BE92C4C4EFC2121"
+			]
+			id: "26727B53C6200BAF"
+			tasks: [{
+				id: "7D2050ECDB464605"
+				type: "item"
+				item: "naturesaura:furnace_heater"
+			}]
+			rewards: [{
+				id: "186DA8F039DBD7E8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}

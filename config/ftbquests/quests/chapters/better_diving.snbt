@@ -1,0 +1,305 @@
+{
+	id: "279912C3E5E02091"
+	group: "52B64564C2528367"
+	order_index: 0
+	filename: "better_diving"
+	title: "Better Diving"
+	icon: {
+		id: "better_diving:seamoth"
+		Count: 1b
+		tag: {
+			"better_diving:item_stack_handler": {
+				Size: 1
+				Items: [ ]
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.5d
+			y: 0.5d
+			id: "067A7F673E50D977"
+			tasks: [{
+				id: "47B3F4354A23B6A8"
+				type: "item"
+				item: {
+					id: "better_diving:seamoth"
+					Count: 1b
+					tag: {
+						"better_diving:item_stack_handler": {
+							Size: 1
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "47D1914F0E088895"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			id: "1C104B1932484043"
+			tasks: [{
+				id: "5AC0C89CC4E6C4AD"
+				type: "item"
+				item: {
+					id: "better_diving:diving_mask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FCF4C1BFF6FC9B1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "2D47537AF1C48D34"
+			tasks: [{
+				id: "7A318C35B1339085"
+				type: "item"
+				item: {
+					id: "better_diving:standard_o2_tank"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7BA187CBB5577DDA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			id: "31AFB9A9FEC51FBF"
+			tasks: [{
+				id: "6AFA6743B7475339"
+				type: "item"
+				item: {
+					id: "better_diving:wetsuit_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "27CA6A50FC0AE232"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			id: "4FE673A3BA14629B"
+			tasks: [{
+				id: "13683D202FBDEF42"
+				type: "item"
+				item: {
+					id: "better_diving:fins"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0D92B330388715D5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["4FE673A3BA14629B"]
+			id: "64A24AF179738DC4"
+			tasks: [{
+				id: "227197F36497FFA9"
+				type: "item"
+				item: {
+					id: "better_diving:ultra_glide_fins"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A50B0695E0BD88D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			dependencies: ["4FE673A3BA14629B"]
+			id: "7EFC238F2139A1E5"
+			tasks: [{
+				id: "5E476E6D1BFFCCC6"
+				type: "item"
+				item: {
+					id: "better_diving:reinforced_fins"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5DDD9FCCD07BDD07"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["31AFB9A9FEC51FBF"]
+			id: "63ECC1E8ECDD40F6"
+			tasks: [{
+				id: "62EC32591959C574"
+				type: "item"
+				item: {
+					id: "better_diving:reinforced_wetsuit_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7838CDEF50CE405D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["31AFB9A9FEC51FBF"]
+			id: "5B46796EE2DAC126"
+			tasks: [{
+				id: "296F2515A81ACE25"
+				type: "item"
+				item: {
+					id: "better_diving:improved_wetsuit_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6B78711920C261E9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["2D47537AF1C48D34"]
+			id: "5D3A551277C2CE0B"
+			tasks: [{
+				id: "439C9EA6A2887A8A"
+				type: "item"
+				item: {
+					id: "better_diving:reinforced_o2_tank"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7F1C64CDDE467C2F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["2D47537AF1C48D34"]
+			id: "2562976C7D1BE545"
+			tasks: [{
+				id: "6B6E03CE9769A64F"
+				type: "item"
+				item: {
+					id: "better_diving:high_capacity_o2_tank"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "602B5B2ECC373FE5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["1C104B1932484043"]
+			id: "5CB2BDC28C9A9F1D"
+			tasks: [{
+				id: "22E048A223BD8285"
+				type: "item"
+				item: {
+					id: "better_diving:reinforced_diving_mask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "25A65BF0187F1931"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["1C104B1932484043"]
+			id: "1067A40743559B96"
+			tasks: [{
+				id: "5DBD57DAD2F82D7D"
+				type: "item"
+				item: {
+					id: "better_diving:rebreather"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "74E4A6B38B085AC1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}

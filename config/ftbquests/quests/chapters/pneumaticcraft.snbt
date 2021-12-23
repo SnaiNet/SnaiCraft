@@ -1,0 +1,410 @@
+{
+	id: "33CAFBCC42B90E10"
+	group: "52B64564C2528367"
+	order_index: 5
+	filename: "pneumaticcraft"
+	title: "PneumaticCraft"
+	icon: "pneumaticcraft:air_compressor"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -12.0d
+			y: 1.0d
+			id: "3EE903E2C5D94A54"
+			tasks: [{
+				id: "3F2D4AF191988219"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+			}]
+			rewards: [{
+				id: "169E79801C2B1C65"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -10.0d
+			y: 1.0d
+			subtitle: "Explosive!"
+			description: ["To get your initial compressed iron, drop iron ingots on the ground and set off an explosion next to them with TNT. You'll lose roughly 20% of the material doing this (so try doing like a stack of iron to start), but there are more efficient ways to get it soon."]
+			dependencies: ["3EE903E2C5D94A54"]
+			id: "0EEE9E088743672D"
+			tasks: [{
+				id: "58CA8CF69AD7C3A4"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "4424F28F892C7BBD"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "20E903A58D19509E"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 1.0d
+			subtitle: "Under pressure"
+			description: ["The air compressor is your first block designed to make air pressure. Don't let the pressure exceed 5 bar in these early machines or results could be catastrophic."]
+			dependencies: ["0EEE9E088743672D"]
+			id: "5E67B90CDA37A4B7"
+			tasks: [
+				{
+					id: "79118359513396AC"
+					type: "item"
+					item: "pneumaticcraft:air_compressor"
+				}
+				{
+					id: "58D515176A6DAD2F"
+					type: "item"
+					item: "pneumaticcraft:pressure_tube"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "0EC0FB2BB2E5367F"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "11C14E3ADAA5C7C2"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			subtitle: "Compressing Items"
+			description: [
+				"Acting as both storage for pressurized air and a medium for compressing blocks and items, the pressure chamber is a hollow cube (3x3x3, 4x4x4, or 5x5x5 with larger ones holding more air) that uses input and output ports to ferry items into the block to be compressed."
+				""
+				"The pressurized glass can be used in place of walls on any of the faces to see what's going on inside. At least 2 ports are needed as well, one with the 'O' pointed inwards (to move items into the chamber) and one with it pointed outwards (to remove completed items from the chamber). A small amount of air and pressure are lost with each move operation, which can later be mitigated with upgrades."
+			]
+			dependencies: ["5E67B90CDA37A4B7"]
+			id: "6BA3FB8AE0DA1CF5"
+			tasks: [
+				{
+					id: "08FB273488449B24"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					count: 16L
+				}
+				{
+					id: "41F416EAA57CD5C2"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_glass"
+				}
+				{
+					id: "6F04560A649E4C1D"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+				{
+					id: "3577903A1ED4794A"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "3E02EB2CE421D21F"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "2BD4355AED5DD9E3"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			subtitle: "Oil Processing"
+			description: [
+				"Place a refinery controller down and up to 4 output tanks on top (one per output). Refinery will output Diesel, Kerosene, Gasoline, and LPG."
+				""
+				"The refinery runs on heat and the more heat applied to the controller, the faster it produces."
+			]
+			dependencies: ["6BA3FB8AE0DA1CF5"]
+			id: "407DE4381B07235D"
+			tasks: [
+				{
+					id: "4A5AA68F4D23E593"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "0993B8EE1E58498B"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "5B1670D0BEBEADA0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Plastique"
+			description: ["Uses LPG from the refinery to produce plastics."]
+			dependencies: ["407DE4381B07235D"]
+			id: "75A546A891E016AF"
+			tasks: [{
+				id: "6F4DB01098EF0CE9"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+			rewards: [{
+				id: "4A136781E59D799C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			subtitle: "Yin and Yang"
+			description: ["Uses air pressure to create a heat differential with one side producing high heat and the other extreme cold. It is recommended to apply a heat sink to the side not in use for best results."]
+			dependencies: ["6BA3FB8AE0DA1CF5"]
+			id: "7169925EF148367F"
+			tasks: [{
+				id: "4C417B8D121AFC7F"
+				type: "item"
+				item: "pneumaticcraft:vortex_tube"
+			}]
+			rewards: [{
+				id: "35A611049D7A76AC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.5d
+			description: ["Produces higher amounts of pressure from burnt fuels. Produces heat, which will need to be disappated via heat sink or other means."]
+			dependencies: ["7459B1173A11F5AB"]
+			id: "5D8C2A2DE13B11EF"
+			tasks: [{
+				id: "67AB974AE38AD229"
+				type: "item"
+				item: "pneumaticcraft:advanced_air_compressor"
+			}]
+			rewards: [{
+				id: "046A251282543E8E"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.0d
+			y: -1.0d
+			subtitle: "Higher pressure"
+			description: ["Advanced pipes can handle higher pressures. Ensure that all machines connected can still use the level of pressure involved."]
+			dependencies: [
+				"6BA3FB8AE0DA1CF5"
+				"5E67B90CDA37A4B7"
+			]
+			id: "7459B1173A11F5AB"
+			tasks: [{
+				id: "4B2D3F3D6F2A7E8D"
+				type: "item"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				count: 8L
+			}]
+			rewards: [{
+				id: "7F1F040E4A7E5572"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			subtitle: "Gas Guzzler"
+			description: ["Burns liquid fuels to generate air pressure."]
+			dependencies: ["407DE4381B07235D"]
+			id: "5FF934CC13F10A54"
+			tasks: [{
+				id: "07D9C53705D1B8F8"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+			rewards: [{
+				id: "70B9E2984C2AFF9C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.5d
+			description: ["Produces higher amount of air pressure from liquid fuels. Produces heat, which will need to be disappated via heat sink or other means."]
+			dependencies: [
+				"7459B1173A11F5AB"
+				"5FF934CC13F10A54"
+			]
+			id: "3768A96C1E91FE61"
+			tasks: [{
+				id: "53F7A12ECC01D18B"
+				type: "item"
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+			rewards: [{
+				id: "7DD7DFECDC9A16A9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			description: ["Produces air pressure from the heat differential between blocks on either side of it (e.g. lava and ice)."]
+			dependencies: ["6BA3FB8AE0DA1CF5"]
+			id: "7115FB0A407FD3F7"
+			tasks: [{
+				id: "37A83F733A826905"
+				type: "item"
+				item: "pneumaticcraft:thermal_compressor"
+			}]
+			rewards: [{
+				id: "2E43DD4636298219"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			subtitle: "En-gauge"
+			description: ["Shows the current pressure in a tube and produces a redstone signal based on that pressure. Can be used to shut off a compressor when the pressure gets too high (however, the compressor will finish burning it's current unit of fuel when it recieves a redstone signal, so plan accordingly)."]
+			dependencies: ["5E67B90CDA37A4B7"]
+			id: "236023EACB246F05"
+			tasks: [{
+				id: "42F467DA29A0B1A6"
+				type: "item"
+				item: "pneumaticcraft:pressure_gauge_module"
+			}]
+			rewards: [
+				{
+					id: "4CFA732CA0E11D39"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "664E91F2B5CC1050"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			subtitle: "Hot Stuff"
+			description: ["Disappates heat (or cold) into the surrounding air. Useful for regulating temperature of a machine."]
+			dependencies: ["7169925EF148367F"]
+			id: "0133C09A9B34BB01"
+			tasks: [{
+				id: "07BBBB23E6FAB362"
+				type: "item"
+				item: "pneumaticcraft:heat_sink"
+			}]
+			rewards: [{
+				id: "32700B965BC5DE2E"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			dependencies: [
+				"43F53074C32EA432"
+				"75A546A891E016AF"
+			]
+			id: "1BF6686222BA6E2C"
+			tasks: [{
+				id: "0AB7BD99505E8044"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+			rewards: [{
+				id: "138FB59B9B28EDDC"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["6BA3FB8AE0DA1CF5"]
+			id: "1C79F75B20D03F81"
+			tasks: [{
+				id: "25FA655FCB27F1A0"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+			rewards: [{
+				id: "585AFC5A828E1B6E"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["3088DC7C3D85E890"]
+			id: "43F53074C32EA432"
+			tasks: [{
+				id: "411D51E451909281"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+			rewards: [{
+				id: "5E836D82AE4C8F8E"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: ["1C79F75B20D03F81"]
+			id: "3088DC7C3D85E890"
+			tasks: [{
+				id: "0D5A0418ACC13AFC"
+				type: "item"
+				item: "pneumaticcraft:etching_tank"
+			}]
+			rewards: [{
+				id: "4D05D0E0325A88AF"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

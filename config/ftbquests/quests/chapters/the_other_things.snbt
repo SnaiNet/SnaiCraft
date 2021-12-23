@@ -1,0 +1,953 @@
+{
+	id: "237353007E2EBDDC"
+	group: "711E9D4C67639EA8"
+	order_index: 2
+	filename: "the_other_things"
+	title: "The Other Things"
+	icon: {
+		id: "mininggadgets:mininggadget"
+		Count: 1b
+		tag: {
+			energy: 1000000.0d
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -10.5d
+			y: -7.0d
+			id: "43FCC3B73EDBC233"
+			tasks: [{
+				id: "798DF51E76C48AAF"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "73C9ED53AD2936E7"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.0d
+			id: "5FD1C57B5BC3FBAB"
+			tasks: [{
+				id: "4CF93E0956594654"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4ECC81D4191F06BA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -7.0d
+			id: "67850A80B3364F5A"
+			tasks: [{
+				id: "4E0FEA74A4E6E36E"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+					}
+				}
+			}]
+			rewards: [{
+				id: "53C7F350B96F04FE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			id: "49DEC8B7BAB15F5D"
+			tasks: [{
+				id: "18556286C789534B"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							-143809057
+							251740660
+							-1175525097
+							162441468
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "09A2E297CF4C64CD"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.5d
+			y: -4.5d
+			subtitle: "Mining with laserbeams"
+			id: "03FDA87878D4CACC"
+			tasks: [{
+				id: "1B5F710FB5340E70"
+				type: "item"
+				item: {
+					id: "mininggadgets:mininggadget"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "07243AB345E69147"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.5d
+			y: -3.0d
+			dependencies: ["03FDA87878D4CACC"]
+			id: "61C93E000743CAD3"
+			tasks: [{
+				id: "60B4EC5590EF6113"
+				type: "item"
+				item: "mininggadgets:modificationtable"
+			}]
+			rewards: [{
+				id: "01B7D35ED1E84C18"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -12.5d
+			y: -3.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "3D19CC2097D0B3AD"
+			tasks: [{
+				id: "0856A93B735F570F"
+				type: "item"
+				item: "mininggadgets:upgrade_silk"
+			}]
+			rewards: [{
+				id: "5B98E81D7370234B"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -12.0d
+			y: -2.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "036E43D1F6F1C8DF"
+			tasks: [{
+				id: "0E1130E12B74FA7D"
+				type: "item"
+				item: "mininggadgets:upgrade_void_junk"
+			}]
+			rewards: [{
+				id: "060C0D03F07166C7"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.5d
+			dependencies: ["61C93E000743CAD3"]
+			id: "4C4C965F2BBAFD71"
+			tasks: [{
+				id: "2C24CA5310D75BB4"
+				type: "item"
+				item: "mininggadgets:upgrade_magnet"
+			}]
+			rewards: [{
+				id: "2A6F55ED38D934F1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.5d
+			dependencies: ["61C93E000743CAD3"]
+			id: "0AB4B67F465658F0"
+			tasks: [{
+				id: "0AB0CBBD44117A33"
+				type: "item"
+				item: "mininggadgets:upgrade_fortune_1"
+			}]
+			rewards: [{
+				id: "1FFC08015C8A8B89"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.0d
+			y: -0.5d
+			dependencies: ["0AB4B67F465658F0"]
+			id: "74D5B59925991E9D"
+			tasks: [{
+				id: "4C8E68312696AE8A"
+				type: "item"
+				item: "mininggadgets:upgrade_fortune_3"
+			}]
+			rewards: [{
+				id: "497B6615049F0C2D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -12.5d
+			y: -4.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "283056DCF5D5ADB2"
+			tasks: [{
+				id: "4C05AA2CEA53C717"
+				type: "item"
+				item: "mininggadgets:upgrade_efficiency_1"
+			}]
+			rewards: [{
+				id: "0DEE23B91D3AB071"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -13.5d
+			y: -4.0d
+			dependencies: ["283056DCF5D5ADB2"]
+			id: "3A1E1A314D2A6894"
+			tasks: [{
+				id: "48297905FB2F5041"
+				type: "item"
+				item: "mininggadgets:upgrade_efficiency_5"
+			}]
+			rewards: [{
+				id: "543E57BC9C93D845"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -9.0d
+			y: -2.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "0C3CD0689EAB6395"
+			tasks: [{
+				id: "625FE109BF8996DA"
+				type: "item"
+				item: "mininggadgets:upgrade_light_placer"
+			}]
+			rewards: [{
+				id: "22FCE65D43214EBA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "5A9357ACEFD19142"
+			tasks: [{
+				id: "428C19AA1F647B25"
+				type: "item"
+				item: "mininggadgets:upgrade_range_1"
+			}]
+			rewards: [{
+				id: "56B3110E22551D30"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.5d
+			dependencies: ["5A9357ACEFD19142"]
+			id: "0ECB12E18F0E66CA"
+			tasks: [{
+				id: "12DB09D13A91B294"
+				type: "item"
+				item: "mininggadgets:upgrade_range_3"
+			}]
+			rewards: [{
+				id: "2B7C2E4B25311147"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -4.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "32DF7370DC2E3288"
+			tasks: [{
+				id: "5E23E41101C03320"
+				type: "item"
+				item: "mininggadgets:upgrade_battery_1"
+			}]
+			rewards: [{
+				id: "50FA4C3B6771D4EF"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -4.0d
+			dependencies: ["32DF7370DC2E3288"]
+			id: "30C8A97C7D45427C"
+			tasks: [{
+				id: "2A7CF0DD21D3D3FF"
+				type: "item"
+				item: "mininggadgets:upgrade_battery_3"
+			}]
+			rewards: [{
+				id: "53950DC156D3FF95"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -12.0d
+			y: -5.0d
+			dependencies: ["61C93E000743CAD3"]
+			id: "506B5171063C0731"
+			tasks: [{
+				id: "6D05E784E6E39866"
+				type: "item"
+				item: "mininggadgets:upgrade_freezing"
+			}]
+			rewards: [{
+				id: "02E29B8FFB5318E8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			subtitle: "Pretty blocks"
+			id: "5FA18AD1A5550732"
+			tasks: [{
+				id: "779B20E30441FFE5"
+				type: "item"
+				item: {
+					id: "chisel:iron_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0B6370014CFB2451"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.5d
+			dependencies: ["5FA18AD1A5550732"]
+			id: "7152350EB59BAAAD"
+			tasks: [{
+				id: "0DDC55623BDC6988"
+				type: "item"
+				item: {
+					id: "chisel:hitech_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+						chiseldata: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "465CA7736DC26390"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.0d
+			subtitle: "Bitty Blocks"
+			id: "73C7E1EE16B784F8"
+			tasks: [{
+				id: "0FB9C3F8554D1950"
+				type: "item"
+				item: {
+					id: "chiselsandbits:chisel_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "36FB1443DACC4F34"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			subtitle: "What am I to do with all these bits?"
+			dependencies: ["73C7E1EE16B784F8"]
+			id: "0C6F8581230AF662"
+			tasks: [{
+				id: "72DB07E221D44C7A"
+				type: "item"
+				item: {
+					id: "chiselsandbits:bit_bag"
+					Count: 1b
+					tag: {
+						Inventory: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "2139100BC39FC0B8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.5d
+			subtitle: "Sleep on the road"
+			id: "6DCDCB61808B35F5"
+			tasks: [{
+				id: "28DA6FD295D19DD2"
+				type: "item"
+				item: "comforts:sleeping_bag_white"
+			}]
+			rewards: [{
+				id: "111A45873867E710"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			subtitle: "Phenomenal Cosmic Power"
+			description: ["Compact machines allow you to pack a large collection of machines into a single block space by putting the internals of the machine in an alternate dimension."]
+			id: "1255E5190E0EB2AE"
+			tasks: [{
+				id: "6BBFBB1A214D7662"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
+			}]
+			rewards: [{
+				id: "2821641FCCEA6F4A"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "0F218A3AF8331D84"
+			tasks: [{
+				id: "004ABCB39A2E7B2A"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
+			rewards: [{
+				id: "01A81D5899BC9E2C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "6B3DC27AF490A2DA"
+			tasks: [{
+				id: "3BCB504E32C6239E"
+				type: "item"
+				item: "compactmachines:machine_small"
+			}]
+			rewards: [{
+				id: "00536C615B978BAB"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "51A8CFA217995AA8"
+			tasks: [{
+				id: "5521A490CA3E1176"
+				type: "item"
+				item: "compactmachines:machine_normal"
+			}]
+			rewards: [{
+				id: "34455BC3DE29D873"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.0d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "56D324914FFC5917"
+			tasks: [{
+				id: "3C1253AE08147B91"
+				type: "item"
+				item: "compactmachines:machine_large"
+			}]
+			rewards: [{
+				id: "3BB66521CE4E3234"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.0d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "5232F2EB4281009B"
+			tasks: [{
+				id: "13DD1F0A1A416EB3"
+				type: "item"
+				item: "compactmachines:machine_giant"
+			}]
+			rewards: [{
+				id: "7B409F1BB81C2734"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			dependencies: [
+				"1255E5190E0EB2AE"
+				"6F58BF78C9A9747B"
+			]
+			id: "66EB1ADB7A27D11E"
+			tasks: [{
+				id: "0921F7E198A4C164"
+				type: "item"
+				item: "compactmachines:machine_maximum"
+			}]
+			rewards: [{
+				id: "01F1B0901403DD5D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.0d
+			subtitle: "The dankest of storage"
+			description: ["Dank storage allows you to store large amounts of a few resources. Useful for collecting junk while mining like cobble."]
+			id: "51618BFFB9A5C4B6"
+			tasks: [{
+				id: "78CE84898585E501"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_1"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0AD19816232371A7"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -8.0d
+			dependencies: [
+				"2CBC6ACF6DEC49EF"
+				"51618BFFB9A5C4B6"
+			]
+			id: "46F8A8D579F42D03"
+			tasks: [{
+				id: "19595FCD6C839794"
+				type: "item"
+				item: "dankstorage:dank_2"
+			}]
+			rewards: [{
+				id: "5D2AC562AC38F2FF"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -9.0d
+			dependencies: ["46F8A8D579F42D03"]
+			id: "0CDBCDC6CFD3ABB6"
+			tasks: [{
+				id: "40AE60B3F1BEBCC7"
+				type: "item"
+				item: "dankstorage:dank_3"
+			}]
+			rewards: [{
+				id: "0ECEB949A162B2C7"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -10.0d
+			dependencies: ["0CDBCDC6CFD3ABB6"]
+			id: "610BE1D1DCB5C6F3"
+			tasks: [{
+				id: "024D9329FA006844"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+			rewards: [{
+				id: "6CB7701180149DF3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -9.0d
+			dependencies: ["610BE1D1DCB5C6F3"]
+			id: "1774608908C90C21"
+			tasks: [{
+				id: "15B9FAA064138E37"
+				type: "item"
+				item: "dankstorage:dank_5"
+			}]
+			rewards: [{
+				id: "4C5343891E4E13F1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -8.0d
+			dependencies: ["1774608908C90C21"]
+			id: "1ED92A8D4693B42E"
+			tasks: [{
+				id: "76E15F011698119D"
+				type: "item"
+				item: "dankstorage:dank_6"
+			}]
+			rewards: [{
+				id: "26E082A5FC46CC30"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.0d
+			dependencies: ["1ED92A8D4693B42E"]
+			id: "257E7EECBB32B0A1"
+			tasks: [{
+				id: "3C53ABCDED6CF1C4"
+				type: "item"
+				item: "dankstorage:dank_7"
+			}]
+			rewards: [{
+				id: "55E82340FBA8E6EB"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.5d
+			description: ["The dock allows you to access a \"dank\" like a block in the world."]
+			dependencies: [
+				"2CBC6ACF6DEC49EF"
+				"51618BFFB9A5C4B6"
+			]
+			id: "6C02AFACF080812E"
+			tasks: [{
+				id: "1265BB987B7D909D"
+				type: "item"
+				item: "dankstorage:dock"
+			}]
+			rewards: [{
+				id: "0A69A7D6BAE98289"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			subtitle: "Go Long"
+			description: ["A handy tool for exploring those big caves you're sure to come across, the torch launcher lets you place torches at a distance."]
+			id: "0AFF91EC1874F775"
+			tasks: [{
+				id: "75C1A6D4CD75D3C8"
+				type: "item"
+				item: {
+					id: "cyclic:torch_launcher"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C13D89ABE3C69B1"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			subtitle: "Mobs be gone!"
+			description: ["Blocks hostile mob spawns in a large radius. Warning: not 100% effective, so please continue to use protection."]
+			id: "2DC672BFAB1BE97B"
+			tasks: [{
+				id: "1ACB8B80B182A657"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [{
+				id: "3206F77CCA43D6C2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			subtitle: "Light up my world"
+			description: ["The feral flare lantern lights up a large area around it slowly over time. Useful for builds where you'd rather not have torches everywhere."]
+			id: "55E909C732F1075D"
+			tasks: [{
+				id: "784006792379422C"
+				type: "item"
+				item: "torchmaster:feral_flare_lantern"
+			}]
+			rewards: [{
+				id: "079B26D9095D6F5D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			subtitle: "Not there, there!"
+			description: ["Allows you to \"entangle\" a block within range to effectively act as said block, essentially opening up more sides to address."]
+			id: "5751A32D1FE36615"
+			tasks: [
+				{
+					id: "7A6BE5847C0A92B5"
+					type: "item"
+					item: {
+						id: "entangled:block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1FC7547822CC336E"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "41BB098DDA6EBAD9"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			id: "010A9D0A6BD9049A"
+			tasks: [{
+				id: "2015E2A69EEC70E7"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [{
+				id: "69B356BB003205DC"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["010A9D0A6BD9049A"]
+			id: "2A97E21AE6A5D68D"
+			tasks: [{
+				id: "7661882641BE04CF"
+				type: "item"
+				item: "sophisticatedbackpacks:iron_backpack"
+			}]
+			rewards: [{
+				id: "76004E48FDE69C5B"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["2A97E21AE6A5D68D"]
+			id: "357760900B1134B3"
+			tasks: [{
+				id: "1A029AFF4D7F5F8E"
+				type: "item"
+				item: "sophisticatedbackpacks:gold_backpack"
+			}]
+			rewards: [{
+				id: "1B2013C83189318F"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["357760900B1134B3"]
+			id: "77AD4EDFD3F6AD6A"
+			tasks: [{
+				id: "30CAD68368E1B797"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+			rewards: [{
+				id: "6840968BF9B47A70"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["77AD4EDFD3F6AD6A"]
+			id: "0CE54DDA428FD2F6"
+			tasks: [{
+				id: "082645014147D9AE"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [{
+				id: "5857134C1423B09F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Compact Machines Void"
+			x: -6.0d
+			y: -0.5d
+			description: ["Visit the compact machines dimension"]
+			dependencies: ["1255E5190E0EB2AE"]
+			id: "4D6F5EE1FDE5BC33"
+			tasks: [{
+				id: "06A080A32DDCED6A"
+				type: "dimension"
+				dimension: "compactmachines:compact_world"
+			}]
+			rewards: [{
+				id: "22AEC3D304153E4A"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "The greatest gift is time"
+			description: ["Time in a Bottle stores time while it is in your inventory. You can then \"spend\" this time to speed up machines and other entities."]
+			id: "3406A071B237D561"
+			tasks: [{
+				id: "50E4EB83DEE0C361"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "156E62312D846C33"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}

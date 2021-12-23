@@ -1,0 +1,846 @@
+{
+	id: "3F1555116DBB4244"
+	group: "0C5896690659A687"
+	order_index: 1
+	filename: "botania"
+	title: "Botania"
+	icon: {
+		id: "botania:lexicon"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.5d
+			y: 0.0d
+			subtitle: "Petal to the metal"
+			description: ["The petal apothecary is how you make functional flowers from Botania. Simply fill with water, drop in the petals or other ingredients required and then drop in one wheat seed to complete the craft."]
+			dependencies: ["01568168327C3CCA"]
+			id: "6F58BF78C9A9747B"
+			tasks: [{
+				id: "65AF81C8CBDA52C9"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [{
+				id: "22BE52BA6E3EBA11"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "The Contemplation of Purity"
+			description: ["The first functional flower you'll get, the pure daisy requires no mana and will convert wood and stone placed around it into livingwood and livingrock, respectively."]
+			dependencies: ["6F58BF78C9A9747B"]
+			id: "1F7F12D67359BEF4"
+			tasks: [{
+				id: "729FFFE535D0175B"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [
+				{
+					id: "76028F3BFEDBD4B4"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "01F191CBABAE276B"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			dependencies: [
+				"0F218A3AF8331D84"
+				"6B3DC27AF490A2DA"
+				"51A8CFA217995AA8"
+				"56D324914FFC5917"
+				"5232F2EB4281009B"
+				"66EB1ADB7A27D11E"
+				"1F7F12D67359BEF4"
+			]
+			id: "5630324D7A3E17A8"
+			tasks: [{
+				id: "03B8E0A40C010454"
+				type: "item"
+				item: "botania:livingwood"
+				count: 32L
+			}]
+			rewards: [{
+				id: "2395063177011F14"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: [
+				"0F218A3AF8331D84"
+				"6B3DC27AF490A2DA"
+				"51A8CFA217995AA8"
+				"56D324914FFC5917"
+				"5232F2EB4281009B"
+				"66EB1ADB7A27D11E"
+				"1F7F12D67359BEF4"
+			]
+			id: "7FD1CC26C9609E6A"
+			tasks: [{
+				id: "0D7930D181ED24DA"
+				type: "item"
+				item: "botania:livingrock"
+				count: 32L
+			}]
+			rewards: [{
+				id: "63033C7506020158"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			subtitle: "Spreading the love"
+			description: ["Mana spreaders take mana from nearby flowers or adjacent mana pools and shoots it in a burst in the direction it is facing. Longer distances will result in some loss and lenses can be used to improve the spreader's performance."]
+			dependencies: ["5630324D7A3E17A8"]
+			id: "40C3CB7021FBABBD"
+			tasks: [{
+				id: "6E8B6B5F33D31649"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "25335DCB86DA87D0"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			subtitle: "Like a magic kiddie pool..."
+			description: ["The mana pool accepts mana from mana spreader bursts and stores it. Note: nearby flowers will not fill a pool directly and must be linked to a spreader."]
+			dependencies: ["7FD1CC26C9609E6A"]
+			id: "581E526D8C8F36C0"
+			tasks: [{
+				id: "6D10DC9CB58856FF"
+				type: "item"
+				item: "botania:mana_pool"
+			}]
+			rewards: [{
+				id: "17F233575D9D3A38"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Toasty Flower"
+			description: [
+				"The endoflame is a good starting flower for generating mana. It consumes fuels (such as coal) tossed on the ground nearby and outputs mana into a nearby mana spreader."
+				"It is slow, so you'll want several running."
+			]
+			dependencies: ["1F7F12D67359BEF4"]
+			id: "794C181F3325C722"
+			tasks: [{
+				id: "7FE6C8E311D2A026"
+				type: "item"
+				item: "botania:endoflame"
+				count: 5L
+			}]
+			rewards: [{
+				id: "2514584B066C6505"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			subtitle: "A twig of great power."
+			description: ["The wand of the forest allows you to adjust mana spreaders and point them towards mana pools, for example."]
+			dependencies: ["40C3CB7021FBABBD"]
+			id: "0E533CB4ADE44A95"
+			tasks: [{
+				id: "35F0D2896DC75095"
+				type: "item"
+				item: {
+					id: "botania:twig_wand"
+					Count: 1b
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7EEF04952F227EED"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			subtitle: "A pool for your hand!"
+			description: [
+				"Mana tablets can be filled from mana pools and store mana for use by items and tools in your inventory. "
+				""
+				"For example, manasteel tools will use mana instead of taking durability damage if a tablet is available for use and has mana."
+			]
+			dependencies: ["581E526D8C8F36C0"]
+			id: "7FB63FFBA2EBFA00"
+			tasks: [{
+				id: "1FC319245A3CB4E0"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6549CDDECD7683A9"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Mana things!"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Everything is better with mana!"
+			description: ["To get the above items, drop iron ingots, ender pearls, and diamonds into a mana pool with enough mana to convert them."]
+			dependencies: [
+				"581E526D8C8F36C0"
+				"40C3CB7021FBABBD"
+			]
+			id: "2549BFFCF938E7AE"
+			tasks: [
+				{
+					id: "2B5C939056E0D5FC"
+					type: "item"
+					item: "botania:manasteel_ingot"
+					count: 12L
+				}
+				{
+					id: "13035CFD55A121F6"
+					type: "item"
+					item: "botania:mana_pearl"
+					count: 4L
+				}
+				{
+					id: "23B0B4FACAAF8FC9"
+					type: "item"
+					item: "botania:mana_diamond"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "04803CBD80F5AD99"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Tiering up!"
+			description: ["Build in a 3x3 space (see botania book for details). Takes roughly half a mana pool's worth of mana to convert a manasteel ingot, mana pearl, and mana diamond (all tossed on top of the plate) into one terrasteel ingot."]
+			dependencies: [
+				"2549BFFCF938E7AE"
+				"2DB5C5FEC020E714"
+			]
+			id: "03EE565464867E7E"
+			tasks: [
+				{
+					id: "60C12BF5F3FC081C"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "6DE424BB9554C3FE"
+					type: "item"
+					item: "botania:livingrock"
+					count: 5L
+				}
+				{
+					id: "447C7BBECAF0D196"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "5337F43CD0BADD0F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["03EE565464867E7E"]
+			id: "2965B58130F73488"
+			tasks: [{
+				id: "16C71DDFE791DECF"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "1C3FB7DD22CD183D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			subtitle: "Pickaxe without limits"
+			description: ["The Terra Shatterer is a unique pickaxe that can be upgrade through several tiers by placing it in a mana pool. Each tier takes exponentially more mana to complete."]
+			dependencies: [
+				"7FB63FFBA2EBFA00"
+				"2965B58130F73488"
+			]
+			id: "0E5297F2A7217ED7"
+			tasks: [{
+				id: "39EC4DCFE96B8EDD"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "035F73D86A969557"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Portal to Alfheim"
+			x: 7.0d
+			y: 0.0d
+			subtitle: "Portal to nowhere"
+			description: ["The book will show you how to build this structure. It will consume about 1 mana pool's worth in mana to open and will then use a tiny amount of mana to stay open. This portal doesn't bring you to another dimension, but you can toss items into it and get their elven counterparts back. Don't forget to toss in your Botania book to get it updated with all the new toys at your disposal!"]
+			dependencies: ["2965B58130F73488"]
+			id: "322A15B94FCE3329"
+			tasks: [
+				{
+					id: "2782D718645CCB4B"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "01A28570F577471F"
+					type: "item"
+					item: "botania:livingwood"
+					count: 8L
+				}
+				{
+					id: "42919EB920CB5F07"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+				{
+					id: "517354B65172B4F4"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "76FF38F3EBD98A92"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: "botania:life_essence"
+			x: 11.5d
+			y: 0.0d
+			dependencies: ["18CD091C043B8164"]
+			id: "63E1C8F3D61B3934"
+			tasks: [{
+				id: "17BA8FE954D761F5"
+				type: "kill"
+				entity: "botania:doppleganger"
+				value: 1L
+			}]
+			rewards: [{
+				id: "49B8BA3FFA57A424"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			subtitle: "Guide to the world"
+			description: ["The Lexica Botania is a comprehensive guide to all things Botania."]
+			id: "01568168327C3CCA"
+			tasks: [{
+				id: "4E4AC951B9D727E0"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "19D49FC4AE03CAEA"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			subtitle: "What to do with all these?"
+			description: ["The flower pouch allows you to easily store mystical flowers you pick up in the world. Useful for trying to collect all the colors available."]
+			dependencies: ["01568168327C3CCA"]
+			id: "4D5E14D0C3360508"
+			tasks: [{
+				id: "39E67FB4B89B149D"
+				type: "item"
+				item: "botania:flower_bag"
+			}]
+			rewards: [{
+				id: "42820A14570FEF90"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			dependencies: ["63E1C8F3D61B3934"]
+			id: "7074FC737D503167"
+			tasks: [{
+				id: "6A5CF84D013D90AD"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.5d
+			dependencies: ["63E1C8F3D61B3934"]
+			id: "31FFA193E001F5E4"
+			tasks: [{
+				id: "787D53939F3D4D0C"
+				type: "item"
+				item: "botania:gaia_spreader"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			subtitle: "Rune Tunes"
+			description: ["Runes are used in many of the more complicated recipes and flowers. Runes can be made at the runic altar by clicking the appropriate items on, feeding it mana from a spreader, and then by dropping a livingrock on the top when it's ready."]
+			dependencies: ["581E526D8C8F36C0"]
+			id: "0B6497C38B3801CE"
+			tasks: [{
+				id: "74CE3AC850009637"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [
+				{
+					id: "5CD4E10D3EB6C3AA"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "1006776665E93383"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "28EB5689B0EA97F0"
+			tasks: [{
+				id: "154A35F67AD9292E"
+				type: "item"
+				item: "botania:rune_water"
+			}]
+			rewards: [
+				{
+					id: "24BA26CFCCB12A2D"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "28D88F5C222DA5CD"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 5.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "57DDE71BADC77B22"
+			tasks: [{
+				id: "5238DFC7AB4F8A13"
+				type: "item"
+				item: "botania:rune_fire"
+			}]
+			rewards: [
+				{
+					id: "17AC26297537EB62"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "6E948BABFE8848F0"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "7EDEEB83B9E09934"
+			tasks: [{
+				id: "679C46D19DC0ABF4"
+				type: "item"
+				item: "botania:rune_earth"
+			}]
+			rewards: [
+				{
+					id: "013F9005F62853EB"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "19EB5B8522D22E9D"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "395EA82BFFC2D2EC"
+			tasks: [{
+				id: "701D09D8CEB086AA"
+				type: "item"
+				item: "botania:rune_air"
+			}]
+			rewards: [
+				{
+					id: "0CFFCD4EDE93193E"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "1F81EEAD51EBCE8F"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "2B52C94EB384931A"
+			tasks: [{
+				id: "2A29BAFA4CB761FA"
+				type: "item"
+				item: "botania:rune_spring"
+			}]
+			rewards: [{
+				id: "0F60E1BDEC0E67B8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "3D194835F8FF2EF1"
+			tasks: [{
+				id: "786B2B1563875205"
+				type: "item"
+				item: "botania:rune_summer"
+			}]
+			rewards: [{
+				id: "4A598EEDB93745CB"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "1DC9199377DC2F09"
+			tasks: [{
+				id: "6A4CE463B47E94F7"
+				type: "item"
+				item: "botania:rune_autumn"
+			}]
+			rewards: [{
+				id: "2D7E5D127F1AA359"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "737E248586D4527A"
+			tasks: [{
+				id: "2613612E6E39F7EA"
+				type: "item"
+				item: "botania:rune_winter"
+			}]
+			rewards: [{
+				id: "3689ACD547AA4C33"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "704AA191EFA56C7B"
+			tasks: [{
+				id: "1E010A404E45CC6C"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+			rewards: [{
+				id: "0149EF87A800C5C5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "3DB4D5D340A2A157"
+			tasks: [{
+				id: "7034203A6C994E5E"
+				type: "item"
+				item: "botania:rune_lust"
+			}]
+			rewards: [{
+				id: "6C4E03DCF0E1E1F8"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "1A3A1E6FCCDB7C61"
+			tasks: [{
+				id: "15CBF9CE0738DE3D"
+				type: "item"
+				item: "botania:rune_gluttony"
+			}]
+			rewards: [{
+				id: "4F6FA799E0FCB5C3"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "51E3E2B8712892DD"
+			tasks: [{
+				id: "267092E426075A57"
+				type: "item"
+				item: "botania:rune_greed"
+			}]
+			rewards: [{
+				id: "64FFC29B3ED9B2DC"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "3981F157D626C7D8"
+			tasks: [{
+				id: "44178B080A085D4F"
+				type: "item"
+				item: "botania:rune_sloth"
+			}]
+			rewards: [{
+				id: "5E2FA1D66DBB2153"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "70F3469CE55ADAFC"
+			tasks: [{
+				id: "04BF2EAA55431385"
+				type: "item"
+				item: "botania:rune_wrath"
+			}]
+			rewards: [{
+				id: "4CE8EF887F32F4F9"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "12606CB4BB8F5A3B"
+			tasks: [{
+				id: "7D2940F58546C3BD"
+				type: "item"
+				item: "botania:rune_envy"
+			}]
+			rewards: [{
+				id: "093E1913FBBAB64F"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.0d
+			dependencies: ["0B6497C38B3801CE"]
+			id: "441D5154ABB86FAD"
+			tasks: [{
+				id: "08292D7EA66E6E8C"
+				type: "item"
+				item: "botania:rune_pride"
+			}]
+			rewards: [{
+				id: "080D3B566FC4F781"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Elven materials"
+			x: 8.5d
+			y: 0.0d
+			subtitle: "Elves like pink"
+			description: ["Tossing into the Alfheim portal 2 manasteel ingots, 1 mana diamond, or 1 mana pearl will get you 1 elementium ingot, 1 dragonstone, or 1 pixie dust, respectively."]
+			dependencies: ["322A15B94FCE3329"]
+			id: "3AA20F06EEB8918B"
+			tasks: [
+				{
+					id: "3C3534B4191414BC"
+					type: "item"
+					item: "botania:elementium_ingot"
+					count: 4L
+				}
+				{
+					id: "474075BB025D9C3A"
+					type: "item"
+					item: "botania:dragonstone"
+					count: 4L
+				}
+				{
+					id: "3E6C46A381FBDFC0"
+					type: "item"
+					item: "botania:pixie_dust"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["3AA20F06EEB8918B"]
+			id: "18CD091C043B8164"
+			tasks: [{
+				id: "00996BAA106C2EF2"
+				type: "item"
+				item: "botania:gaia_pylon"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			subtitle: "The help of elves"
+			description: ["Just an enhanced mana spreader that is able to move mana much more quickly per burst."]
+			dependencies: ["3AA20F06EEB8918B"]
+			id: "6CEA75F4CE57EBEE"
+			tasks: [{
+				id: "3A1E83F9ECD1A6D1"
+				type: "item"
+				item: "botania:elven_spreader"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			subtitle: "Shinies"
+			description: ["Sparks will try to balance mana pools they're attached to. Alternatively, they can be placed over constructs like the Terrestrial Agglomeration plate to draw mana much more quickly than spreaders could provide."]
+			dependencies: ["581E526D8C8F36C0"]
+			id: "2DB5C5FEC020E714"
+			tasks: [{
+				id: "734F00E02489E4DE"
+				type: "item"
+				item: "botania:spark"
+				count: 2L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			subtitle: "Flower Power!"
+			description: ["If you can't find a particular color of flower or you don't feel like exploring to find them, floral fertilizer allows you to grow a random assortment of mystical flowers on any grass."]
+			dependencies: ["01568168327C3CCA"]
+			id: "75BEFD2DDD0C5E87"
+			tasks: [{
+				id: "1A25B4676E226F44"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [{
+				id: "328E480DAAB94F9A"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+	]
+}

@@ -1,0 +1,682 @@
+{
+	id: "77DA91F07D34259F"
+	group: "52B64564C2528367"
+	order_index: 8
+	filename: "thermal_mods"
+	title: "Thermal Mods"
+	icon: {
+		id: "thermal:rf_potato"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -8.5d
+			y: 0.5d
+			id: "1714C1B32F8C8329"
+			tasks: [{
+				id: "260B1F4A26AEA4FC"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "thermal:guidebook"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3D8DB42F4B0A23A0"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			subtitle: "A wrench by any other name"
+			dependencies: ["1714C1B32F8C8329"]
+			id: "742E3DCC7E6F710E"
+			tasks: [{
+				id: "337ED8D2868977DB"
+				type: "item"
+				item: "thermal:wrench"
+			}]
+			rewards: [{
+				id: "655763DF3B76ACCA"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			dependencies: ["1714C1B32F8C8329"]
+			id: "4B90F909043E5D1F"
+			tasks: [{
+				id: "6C112276CA021D1E"
+				type: "item"
+				item: "thermal:tinker_bench"
+			}]
+			rewards: [{
+				id: "75AA226577499F07"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["1714C1B32F8C8329"]
+			id: "6913DBC63567A618"
+			tasks: [{
+				id: "3014DEBE3C2C3738"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [{
+				id: "3C88A48E9F5F22B9"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["1714C1B32F8C8329"]
+			id: "58AAF482EA3E983D"
+			tasks: [{
+				id: "6CFE08C13A50BE7E"
+				type: "checkmark"
+				title: "Dynamos Generate Power"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			subtitle: "Stirling Archer"
+			description: ["Burns most regular fuel items (i.e. coal) to generate power. Can be upgraded"]
+			dependencies: ["58AAF482EA3E983D"]
+			id: "50FDD4E027E8F8B2"
+			tasks: [{
+				id: "0DE6146405B4C354"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+			rewards: [{
+				id: "7BDC19B5493473CC"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			subtitle: "Compression Ratio"
+			description: ["Burns liquid fuels to generate power. Can be upgraded."]
+			dependencies: ["58AAF482EA3E983D"]
+			id: "5CB8FAB567CBA292"
+			tasks: [{
+				id: "2119FED9ADA526D4"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+			rewards: [{
+				id: "5B1D6AFF7774F6FF"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			subtitle: "Lava Lamp"
+			description: ["Consumes lava to generate power. Can be upgraded."]
+			dependencies: ["58AAF482EA3E983D"]
+			id: "7569EF9C045A6FBF"
+			tasks: [{
+				id: "57B7077A58728507"
+				type: "item"
+				item: "thermal:dynamo_magmatic"
+			}]
+			rewards: [{
+				id: "017CD42464AEDFF3"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.5d
+			subtitle: "Cha-ching"
+			description: ["Consumes metal coins to produce power. Can be upgraded."]
+			dependencies: ["58AAF482EA3E983D"]
+			id: "2CC78DED0D60F1F2"
+			tasks: [{
+				id: "733545C32DEAAC9B"
+				type: "item"
+				item: "thermal:dynamo_numismatic"
+			}]
+			rewards: [{
+				id: "7785218CD4B9448E"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.5d
+			subtitle: "Shinies"
+			description: ["Consumes gems (like lapis or emeralds) to produce power. Can be upgraded."]
+			dependencies: ["58AAF482EA3E983D"]
+			id: "6650A5F12FD23C38"
+			tasks: [{
+				id: "6208E460C43AA22E"
+				type: "item"
+				item: "thermal:dynamo_lapidary"
+			}]
+			rewards: [{
+				id: "7F6F40AF9FDBC9EF"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.0d
+			dependencies: ["1714C1B32F8C8329"]
+			id: "0CE9655AEADFFDA4"
+			tasks: [{
+				id: "3818F813C6567B44"
+				type: "item"
+				item: "thermal:redstone_servo"
+			}]
+			rewards: [{
+				id: "494C47A2606A268C"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.0d
+			subtitle: "Batteries"
+			description: ["Stores power"]
+			dependencies: ["1714C1B32F8C8329"]
+			id: "3DB9347D4D44C369"
+			tasks: [{
+				id: "173E62C954F09D59"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3A3ECDB10DC358D5"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -11.0d
+			y: 2.0d
+			subtitle: "Charging bull"
+			description: ["Charges handheld items"]
+			dependencies: ["1714C1B32F8C8329"]
+			id: "0C3413084D3F52C6"
+			tasks: [{
+				id: "5F41A0CA18975AD6"
+				type: "item"
+				item: "thermal:charge_bench"
+			}]
+			rewards: [{
+				id: "4E2CF9648ECF920F"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -1.5d
+			subtitle: "Cooker"
+			description: ["Uses power to smelt items."]
+			dependencies: ["6913DBC63567A618"]
+			id: "2ED2769CF349072C"
+			tasks: [{
+				id: "2CBF6A18104BA98E"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+			rewards: [{
+				id: "152C0B273F0DD594"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			subtitle: "Crusher"
+			description: ["Grinds ores down into 2 dusts for ore duplication. Also used to get dusts from ingots or other resources."]
+			dependencies: ["6913DBC63567A618"]
+			id: "3AE2F7E8C101151E"
+			tasks: [{
+				id: "26C1C6A9CDFC0C43"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+			rewards: [{
+				id: "5DB4154D361FDBF2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			subtitle: "I saw you"
+			description: ["Processes logs into planks with a greater return than normal crafting."]
+			dependencies: ["6913DBC63567A618"]
+			id: "7354CF51A9A06F65"
+			tasks: [{
+				id: "541A4EE2E3620B73"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+			rewards: [{
+				id: "06C37019EE9E8C48"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			subtitle: "Super cooker"
+			description: ["Handles more advanced smelting operations such as alloying."]
+			dependencies: ["6913DBC63567A618"]
+			id: "2F0C6DD4736F4418"
+			tasks: [{
+				id: "3C4F748DA6479FF7"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+			rewards: [{
+				id: "25070DB60F49E4E6"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			subtitle: "It's a plant in a box"
+			description: ["Uses power to grow plants quickly."]
+			dependencies: ["6913DBC63567A618"]
+			id: "149FB6C76E59225C"
+			tasks: [{
+				id: "782B3086690F0B49"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+			rewards: [{
+				id: "1B2C9CB123901E96"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["6913DBC63567A618"]
+			id: "67B85618FADFF388"
+			tasks: [{
+				id: "55ED2BF2BB9D7E3E"
+				type: "item"
+				item: "thermal:machine_centrifuge"
+			}]
+			rewards: [{
+				id: "54430A62CAA814B1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			subtitle: "Smush"
+			description: ["Makes plates and other component ingredients."]
+			dependencies: ["6913DBC63567A618"]
+			id: "16434A1F1724A13A"
+			tasks: [{
+				id: "1ECEF09657CF666C"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [{
+				id: "0EE6C6CB6F268EAF"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			subtitle: "I'm melting!"
+			description: ["Melts items into their molten state."]
+			dependencies: ["6913DBC63567A618"]
+			id: "3D07299046D348B2"
+			tasks: [{
+				id: "4AD4C3F66DEC7200"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "4F85D80EB3435EC2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["6913DBC63567A618"]
+			id: "53C4908E947623D5"
+			tasks: [{
+				id: "584682FB91057652"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+			rewards: [{
+				id: "61D92220DD32DE7F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			subtitle: "Fuel"
+			description: ["Refines several kinds of fluid into fuels to be used in compression dynamos."]
+			dependencies: ["6913DBC63567A618"]
+			id: "3A3486849BD4AD90"
+			tasks: [{
+				id: "50529F2562856E1E"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+			rewards: [{
+				id: "325CB523D6E3E322"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.5d
+			dependencies: ["6913DBC63567A618"]
+			id: "40900516E403D920"
+			tasks: [{
+				id: "7503354AC3FB3B3B"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+			rewards: [{
+				id: "4E6EDA26387C9BA0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			subtitle: "Genie in a bottle"
+			description: ["Packages fluids into containers such as buckets or bottles."]
+			dependencies: ["6913DBC63567A618"]
+			id: "2035B985A9E941A0"
+			tasks: [{
+				id: "2675DD8B68803DC7"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+			rewards: [{
+				id: "5F989E3C7FAB5349"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			subtitle: "Toil and Trouble"
+			description: ["Brews potions in an automated way using power."]
+			dependencies: ["6913DBC63567A618"]
+			id: "456007A904F6C11D"
+			tasks: [{
+				id: "6B367ED7398221CC"
+				type: "item"
+				item: "thermal:machine_brewer"
+			}]
+			rewards: [{
+				id: "1D370A8E167C3A02"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			subtitle: "Here fishy fishy"
+			description: ["An automated fishing system."]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "2953C7361760F383"
+			tasks: [{
+				id: "18EED167F75A4F8F"
+				type: "item"
+				item: "thermal:device_fisher"
+			}]
+			rewards: [{
+				id: "11E4693C5FC210FF"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.0d
+			subtitle: "Tree tapping"
+			description: ["Harvests resin from trees. This can later be refined into fuel."]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "309C2116938AA83A"
+			tasks: [{
+				id: "3039EADC7B9C62D2"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+			rewards: [{
+				id: "579CCCB788F1F4AB"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 5.0d
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "318D27632683F790"
+			tasks: [{
+				id: "069693497FB6B524"
+				type: "item"
+				item: "thermal:device_hive_extractor"
+			}]
+			rewards: [{
+				id: "0A03E7F80193A8F4"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "76D543417CECEBEC"
+			tasks: [{
+				id: "1B25B8FFE7FF9B4F"
+				type: "item"
+				item: "thermal:device_soil_infuser"
+			}]
+			rewards: [{
+				id: "1C16023A8AD855E0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			subtitle: "Free water"
+			description: ["When places between two source blocks of water, generates water that can then be piped to machines."]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "5484E3A7C79FDAAE"
+			tasks: [{
+				id: "639980CEE1362495"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+			rewards: [{
+				id: "18ADAC47CFAD81BE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 6.0d
+			subtitle: "Cobble Generator"
+			description: ["Makes cobble, obsidian, or other stones from water and lava."]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "75EAC020AE19AC4B"
+			tasks: [{
+				id: "7600724A112DADBA"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+			rewards: [{
+				id: "58F76CE43A15D7F9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -6.0d
+			y: 6.0d
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "1978E3A85FF4E81D"
+			tasks: [{
+				id: "4BC0CA3F2FB60A88"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+			rewards: [{
+				id: "62C11A6411B8C4FE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			subtitle: "Trash Can"
+			description: ["Destroys unwanted items."]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "0FDD6957111E7ECC"
+			tasks: [{
+				id: "78AA932E8F03E7C7"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+			rewards: [{
+				id: "41B396E7BCA45247"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			subtitle: "AoE Potions"
+			description: ["Spreads potion effects in an area"]
+			dependencies: ["0CE9655AEADFFDA4"]
+			id: "42575E311CB7CF52"
+			tasks: [{
+				id: "7561041127ABACD9"
+				type: "item"
+				item: "thermal:device_potion_diffuser"
+			}]
+			rewards: [{
+				id: "2B6090393B40C2EE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -11.0d
+			y: 0.5d
+			dependencies: ["1714C1B32F8C8329"]
+			id: "0CCF8B2F0CAEEE05"
+			tasks: [{
+				id: "2B604F102816FC66"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+			rewards: [{
+				id: "3DA2A903E10926AB"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -12.5d
+			y: 0.5d
+			dependencies: ["0CCF8B2F0CAEEE05"]
+			id: "51F528FADCCF830E"
+			tasks: [{
+				id: "48A12788CBA3111C"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+			rewards: [{
+				id: "4DADDDEED753DABC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -14.0d
+			y: 0.5d
+			dependencies: ["51F528FADCCF830E"]
+			id: "6D47C0EA56D34DEB"
+			tasks: [{
+				id: "59D84F39E532BC1B"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+			rewards: [{
+				id: "63E15B419E8004A5"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

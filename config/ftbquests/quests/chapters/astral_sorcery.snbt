@@ -1,0 +1,432 @@
+{
+	id: "10C8F0DE8B5D0358"
+	group: "0C5896690659A687"
+	order_index: 0
+	filename: "astral_sorcery"
+	title: "Astral Sorcery"
+	icon: "astralsorcery:tome"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -6.5d
+			y: -0.5d
+			subtitle: "Star light, star bright"
+			description: ["Astral Sorcery begins with a bit of Marble and some Aquamarine gems (found in sand in lakes and rivers)"]
+			id: "6E0115C4BB4C1F38"
+			tasks: [
+				{
+					id: "620F9FCC90B63C71"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 16L
+				}
+				{
+					id: "267D9F530A0FE4C9"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "366F4BC038AA2447"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.5d
+			y: -0.5d
+			subtitle: "The resonating wand will allow you to direct the starlight from crystals or other sources as needed."
+			dependencies: ["6E0115C4BB4C1F38"]
+			id: "7FC74F40D8D80703"
+			tasks: [{
+				id: "5B59FB7B49CD7D1A"
+				type: "item"
+				item: "astralsorcery:wand"
+			}]
+			rewards: [{
+				id: "7A2AA96FA8FBC158"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			subtitle: "Crafting by the stars"
+			description: ["The luminous crafting table is made by directing the starlight from a crystal (such as those under the large shrines) onto a vanilla crafting table."]
+			dependencies: ["7FC74F40D8D80703"]
+			id: "450B8F3DF8658F01"
+			tasks: [{
+				id: "1EF4A36F0C9AD427"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+			rewards: [{
+				id: "4C105F27FCB7D65B"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: [
+				"450B8F3DF8658F01"
+				"2CBC6ACF6DEC49EF"
+			]
+			id: "55B5FA37613C1FD7"
+			tasks: [{
+				id: "3F56FEB73A6C4D84"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [
+				{
+					id: "544865DD064650F2"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "6043AD6B0F744DD1"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -2.0d
+			dependencies: ["7FC74F40D8D80703"]
+			id: "2CBC6ACF6DEC49EF"
+			tasks: [{
+				id: "740D0F2E2B5C12DA"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "6553E1F70CD53823"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["450B8F3DF8658F01"]
+			id: "4FCA41F16817EFB1"
+			tasks: [{
+				id: "52C2A8FD29C38A40"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+			rewards: [
+				{
+					id: "363CE690E4617938"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "3F0D0E6BA7EFDCC4"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["450B8F3DF8658F01"]
+			id: "38233E89B150FF44"
+			tasks: [{
+				id: "1F88854775FD84B9"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+			rewards: [
+				{
+					id: "7716F5E725B8F433"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "293C1B90D648BEBE"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: [
+				"38233E89B150FF44"
+				"4FCA41F16817EFB1"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B5EDA6E027288F5"
+			tasks: [{
+				id: "34F1D037454B4D01"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+			rewards: [
+				{
+					id: "77B8A3E745F78E89"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "348B9B819697F84D"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["38233E89B150FF44"]
+			id: "0C6D51FB38A092A5"
+			tasks: [{
+				id: "2EE8CA315083F2FA"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_gateway"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "238FCF0411903990"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "5FF4A3CF5A15627C"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["38233E89B150FF44"]
+			id: "50FB816AD1418555"
+			tasks: [{
+				id: "75492F5E13855BA4"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+			rewards: [
+				{
+					id: "4EBD176818B5C53C"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "2C056083DDB4530A"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			dependencies: ["50FB816AD1418555"]
+			id: "5EEC655B8B737376"
+			tasks: [{
+				id: "08944AD27CB0BB93"
+				type: "item"
+				item: "astralsorcery:ritual_pedestal"
+			}]
+			rewards: [
+				{
+					id: "4D20C30EE7FB80BE"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "72FF71A785D77DB9"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["38233E89B150FF44"]
+			id: "21D25C44B7AFDDC1"
+			tasks: [{
+				id: "7B583713C29C7A93"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "306CDFAD332E7DA2"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "2A6C7EDFF953AF5E"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			dependencies: ["38233E89B150FF44"]
+			id: "51CAC504AA33F926"
+			tasks: [{
+				id: "596771BA01A6E1A4"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+			rewards: [{
+				id: "15334CB8C0050E84"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			dependencies: ["51CAC504AA33F926"]
+			id: "0BC45846B13C11B0"
+			tasks: [{
+				id: "22851FA20660E972"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+			rewards: [{
+				id: "23D0205EBFFCD419"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["51CAC504AA33F926"]
+			id: "5EDB4BC9E9546FFC"
+			tasks: [{
+				id: "3393427080949A2F"
+				type: "item"
+				item: "astralsorcery:refraction_table"
+			}]
+			rewards: [{
+				id: "3CDBBF7C019B83DC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["51CAC504AA33F926"]
+			id: "0C8672241ADB2439"
+			tasks: [{
+				id: "177FBB8D04C39A34"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+			rewards: [{
+				id: "16CC690B645A6A2F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.5d
+			dependencies: ["0BC45846B13C11B0"]
+			id: "31ACC353342A1F20"
+			tasks: [{
+				id: "7FF41222C9CFA176"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "646A74F124F63A46"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			dependencies: ["0BC45846B13C11B0"]
+			id: "04A27078FD3861A6"
+			tasks: [{
+				id: "1B31092AC1C5586E"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [{
+				id: "6E99D5C04B3C9190"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			dependencies: ["0BC45846B13C11B0"]
+			id: "1A238FC1B7F52683"
+			tasks: [{
+				id: "228F589595C77C69"
+				type: "item"
+				item: "astralsorcery:fountain"
+			}]
+			rewards: [{
+				id: "54929383643272E8"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

@@ -1,0 +1,93 @@
+{
+	id: "75731BFBCC1C1343"
+	order_index: 2
+	title: "Elite Random Loot"
+	icon: "ironchest:gold_chest"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{
+			xp_levels: 20
+			type: "xp_levels"
+			weight: 18
+		}
+		{
+			xp_levels: 5
+			type: "xp_levels"
+			weight: 10
+		}
+		{ item: "minecraft:nether_star", weight: 8 }
+		{ item: "minecraft:ancient_debris", count: 4, weight: 4 }
+		{ item: "minecraft:end_crystal", count: 4, weight: 8 }
+		{ item: "minecraft:ender_pearl", count: 16, weight: 16 }
+		{ item: "apotheosis:crystal_seashelf", count: 4, weight: 12 }
+		{ item: "smallships:bop_dead_brigg", weight: 16 }
+		{ item: "minecraft:dragon_breath", count: 8, weight: 8 }
+		{ item: "mekanism:elite_universal_cable", count: 16, weight: 20 }
+		{ item: "mekanism:elite_mechanical_pipe", count: 16, weight: 20 }
+		{ item: "mekanism:elite_logistical_transporter", count: 16, weight: 20 }
+		{
+			item: {
+				id: "mekanism:elite_energy_cube"
+				Count: 1b
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "64000000"
+						}]
+					}
+				}
+			}
+			weight: 8
+		}
+		{ item: "botania:life_essence", weight: 2 }
+		{ item: "bettercompat:terrasteel_bucket", weight: 10 }
+		{ item: "rftoolsbase:infused_diamond", count: 8, weight: 12 }
+		{ item: "storagedrawers:emerald_storage_upgrade", count: 2, weight: 8 }
+		{
+			item: {
+				id: "minecraft:elytra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 16
+		}
+		{ item: "industrialforegoing:mob_duplicator", weight: 8 }
+		{ item: "industrialforegoing:machine_frame_advanced", weight: 12 }
+		{ item: "thermal:machine_frame", weight: 16 }
+		{ item: "iceandfire:deathworm_egg_giant", weight: 4 }
+		{
+			item: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "upgrades"
+				}
+			}
+		}
+		{ item: "rats:rat_upgrade_creative" }
+		{ item: "twilightforest:magic_map_focus", weight: 12 }
+		{ item: "industrialforegoing:supreme_black_hole_unit", weight: 3 }
+		{ item: "industrialforegoing:wither_builder", weight: 12 }
+		{ item: "immersiveengineering:cloche", count: 4, weight: 6 }
+		{ item: "fluxnetworks:gargantuan_flux_storage", weight: 8 }
+		{ item: "pneumaticcraft:printed_circuit_board", weight: 16 }
+		{
+			item: {
+				id: "endertanks:ender_tank"
+				Count: 1b
+				tag: {
+					owner: "all"
+					code: "000"
+				}
+			}
+			count: 2
+			weight: 12
+		}
+		{ item: "tesseract:tesseract", count: 2, weight: 12 }
+		{ item: "artifacts:eternal_steak" }
+	]
+}

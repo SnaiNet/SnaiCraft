@@ -1,0 +1,591 @@
+{
+	id: "799DA6541208EA42"
+	group: "52B64564C2528367"
+	order_index: 3
+	filename: "industrial_foregoing"
+	title: "Industrial Foregoing"
+	icon: "industrialforegoing:straw"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Tree Tap"
+			description: ["Collects liquid latex from logs placed in front of it. Can run without power, but will be faster with."]
+			dependencies: ["4663054FF3544924"]
+			id: "66D40D89130A0F0B"
+			tasks: [{
+				id: "142386AE1F0B0D7A"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+			rewards: [{
+				id: "39A317D73AEB12B8"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Rubberbanding"
+			description: ["Takes the liquid latex and converts it into dry rubber, which can then be combined and smelted into plastic sheets."]
+			dependencies: ["66D40D89130A0F0B"]
+			id: "6B0DEAAABC6B03FA"
+			tasks: [{
+				id: "5D581D1CEB6A2214"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+			rewards: [{
+				id: "42F0DEBEE9E56E6C"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Plastic"
+			icon: "industrialforegoing:plastic"
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["6B0DEAAABC6B03FA"]
+			id: "2312F12961291FF3"
+			tasks: [{
+				id: "6F0354C4AD916733"
+				type: "item"
+				title: "Any #forge:plastic"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:plastic"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "0E1AA758CF0AB605"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "529B0C594D5B8449"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			dependencies: ["2312F12961291FF3"]
+			id: "3ECAF49E3C9F0FB2"
+			tasks: [{
+				id: "14E9BC24657A436A"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [
+				{
+					id: "53CBD46DBA3B79AF"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "216F0BDEFF7C8928"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "04B86779F7C27EF2"
+			tasks: [{
+				id: "4B629EAF1A17AC60"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon0"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 0.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E29BDCD20EF208D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "00CB77E9C184D809"
+			tasks: [{
+				id: "0C776C553587DA93"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon1"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 1.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0002F9D16DC55E4C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "17986CA30F708135"
+			tasks: [{
+				id: "7FEB37E43A035903"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon2"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 2.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "73037E44B0281300"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "148D055AA0574819"
+			tasks: [{
+				id: "5715B01BFB476C8E"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon3"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "6C4F5525AAAE58A6"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "27868C1F7F96B47F"
+			tasks: [{
+				id: "339118C98AB57B86"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon4"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 4.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4BF58A806CD62570"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "169277BE0E2E14B2"
+			tasks: [{
+				id: "03D4B594C0DF3733"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon5"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 5.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "331E7A55C34468C2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "5368FD61F343B4D8"
+			tasks: [{
+				id: "47D7E3716E14C8BD"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon6"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 6.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "63DD86E9D3069A5E"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "1435A6C775ADD3E2"
+			tasks: [{
+				id: "2F035931DA42470D"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon7"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 7.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7D4D90771AE8506E"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "5D1892627DE02055"
+			tasks: [{
+				id: "44433CE51D2F445D"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon8"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 8.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "7D1B036A5DD3785D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "29D8F02DB9287CFA"
+			tasks: [{
+				id: "18EBFB7839A46166"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon9"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 9.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "39F67EFA4D01995C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "3174177ACC6B0BC9"
+			tasks: [{
+				id: "6EDA736E09E5C668"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon10"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 10.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "10A3A2F60945C95D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			dependencies: ["3ECAF49E3C9F0FB2"]
+			id: "7F589BAA3D2883D6"
+			tasks: [{
+				id: "1049692B12C14EA2"
+				type: "item"
+				item: {
+					id: "industrialforegoing:range_addon11"
+					Count: 1b
+					tag: {
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "20BF2FF5F08E25CF"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			id: "4663054FF3544924"
+			tasks: [{
+				id: "73EBBB297EC9F6DE"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+			rewards: [{
+				id: "302A6FE2BC9F0B72"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			dependencies: ["2312F12961291FF3"]
+			id: "0FA794C4244F1D11"
+			tasks: [{
+				id: "66E10429B3F373BB"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+			rewards: [{
+				id: "3028B6BA8330B1D0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["0FA794C4244F1D11"]
+			id: "019BA3D7CA8B6D76"
+			tasks: [{
+				id: "06B53F04C48DFECD"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+			rewards: [{
+				id: "1AAA80F6118DF12F"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			dependencies: ["019BA3D7CA8B6D76"]
+			id: "5752C388BAD1AFCC"
+			tasks: [{
+				id: "50456E7057929C3A"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+			rewards: [{
+				id: "5919AEAB68D097A2"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			subtitle: "Plantables"
+			description: ["Places plants on farmland above it. Can plant multiple types of plants in designated areas (with range upgrades)."]
+			dependencies: ["4663054FF3544924"]
+			id: "0B93E924F9935F3E"
+			tasks: [{
+				id: "4A1847386BA6EF59"
+				type: "item"
+				item: "industrialforegoing:plant_sower"
+			}]
+			rewards: [{
+				id: "5E86975466E4537B"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			subtitle: "Harvest moon"
+			description: ["Collects fully grown plants in front of it. Can take range upgrades to increase it's working area."]
+			dependencies: ["4663054FF3544924"]
+			id: "7DD40AB028F1E9AC"
+			tasks: [{
+				id: "0B92DE73F27EA86D"
+				type: "item"
+				item: "industrialforegoing:plant_gatherer"
+			}]
+			rewards: [{
+				id: "511F17A466B84917"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["0FA794C4244F1D11"]
+			id: "4F1D54C7CF0C0066"
+			tasks: [{
+				id: "212201DC8887B1EA"
+				type: "item"
+				item: "industrialforegoing:mob_detector"
+			}]
+			rewards: [{
+				id: "5590E329FF9EFCD5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.0d
+			dependencies: ["0FA794C4244F1D11"]
+			id: "36782973E8792DF2"
+			tasks: [{
+				id: "097B8DC7CE548586"
+				type: "item"
+				item: "industrialforegoing:marine_fisher"
+			}]
+			rewards: [{
+				id: "1783F99BD73A3AB3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "Like taking a baby from it's mother"
+			description: ["Moves baby animals in front of the machine to behind it. Useful for separating animals to kill from those needed to breed."]
+			dependencies: ["4663054FF3544924"]
+			id: "3F8EDC993DD35376"
+			tasks: [{
+				id: "54B782DFD8C3F024"
+				type: "item"
+				item: "industrialforegoing:animal_baby_separator"
+			}]
+			rewards: [{
+				id: "01E9E239947189B8"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.0d
+			subtitle: "Raw Meat"
+			description: ["Kills animals and mobs in front of it, generating liquid meat and pink slime."]
+			dependencies: ["4663054FF3544924"]
+			id: "36184AA65C9A27EE"
+			tasks: [{
+				id: "2E1D1FDCA0730C83"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+			rewards: [{
+				id: "3C94A02E2C4464F0"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			dependencies: ["019BA3D7CA8B6D76"]
+			id: "0F5390937E7BB78A"
+			tasks: [{
+				id: "42A8E5094D318C78"
+				type: "item"
+				item: "industrialforegoing:mob_crusher"
+			}]
+			rewards: [{
+				id: "7314FE0BFF1EC078"
+				type: "loot"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			dependencies: ["019BA3D7CA8B6D76"]
+			id: "19E6CF530FC05B66"
+			tasks: [{
+				id: "2A09318E9542A1CE"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+			rewards: [{
+				id: "4FFBDD6AB8883F42"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

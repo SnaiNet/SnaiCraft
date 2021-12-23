@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "7604FE20C6A7FFA7", title: "Getting Started" }
+		{ id: "52B64564C2528367", title: "Technology" }
+		{ id: "0C5896690659A687", title: "Magic" }
+		{ id: "711E9D4C67639EA8", title: "Misc" }
+	]
+}

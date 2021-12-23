@@ -1,0 +1,737 @@
+{
+	id: "6518351F3DCA2DA7"
+	group: "52B64564C2528367"
+	order_index: 7
+	filename: "refined_storage"
+	title: "Refined Storage"
+	icon: "refinedstorage:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting started"
+			x: -4.5d
+			y: 1.0d
+			subtitle: "Make sure you're ready"
+			description: ["Yay! You're finally getting into the age of digital storage! Refined Storage allows you to store all your belongings on a disk and accessible through a network. "]
+			id: "4FA6B92499465C55"
+			tasks: [
+				{
+					id: "3F0508BA1B312E9E"
+					type: "item"
+					item: "refinedstorage:quartz_enriched_iron"
+					count: 32L
+				}
+				{
+					id: "553EEDEC88B5E10E"
+					type: "item"
+					title: "Any #forge:silicon"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:silicon"
+						}
+					}
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0C8477D72897A9E0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Controller"
+			x: -2.5d
+			y: 1.0d
+			subtitle: "The heart of the system"
+			description: ["The controller is the core of the refined storage system. Each network needs one (and only one) to function."]
+			dependencies: ["4FA6B92499465C55"]
+			id: "451B9FA8E2351956"
+			tasks: [{
+				id: "636D8781CA6CE061"
+				type: "item"
+				title: "Any #refinedstorage:controller"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:controller"
+					}
+				}
+			}]
+			rewards: [{
+				id: "7DE96035D13ECAC1"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.5d
+			subtitle: "Disk Jockey"
+			description: ["The disk drive holds all of the item and fluid storage disks. All disks in the drive will be accessible through the system's grid(s)."]
+			dependencies: ["451B9FA8E2351956"]
+			id: "5ECFB820FAAA0908"
+			tasks: [{
+				id: "52AFBF0C3545890F"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+			rewards: [{
+				id: "07C290F1FC2951C3"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "5F7A30D2F72A327A"
+			tasks: [{
+				id: "26ECBF179E177C6A"
+				type: "item"
+				item: "refinedstorage:1k_storage_disk"
+			}]
+			rewards: [{
+				id: "11FDEFE525EFD230"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "3489EE52FAB2B851"
+			tasks: [{
+				id: "18AB902195053604"
+				type: "item"
+				item: "refinedstorage:4k_storage_disk"
+			}]
+			rewards: [{
+				id: "28BA911786736022"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "53EDDE5ED039D0D8"
+			tasks: [{
+				id: "6CB5CCF5A9A234AD"
+				type: "item"
+				item: "refinedstorage:16k_storage_disk"
+			}]
+			rewards: [{
+				id: "4A5D46E94AA34C24"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "7903AC14EA32310A"
+			tasks: [{
+				id: "0F2DC770E6658F88"
+				type: "item"
+				item: "refinedstorage:64k_storage_disk"
+			}]
+			rewards: [{
+				id: "23B430E5FC32FA8A"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "585EA9F7CBC6D352"
+			tasks: [{
+				id: "51DBAD143F684DAE"
+				type: "item"
+				item: "refinedstorage:64k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "745DA95B7436DE0D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "2CEEBBBCCB6F9390"
+			tasks: [{
+				id: "741317B5DDA3E47E"
+				type: "item"
+				item: "refinedstorage:256k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "60E8C4CCA2B76FDC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "1128D82890261113"
+			tasks: [{
+				id: "382B35877CF5862E"
+				type: "item"
+				item: "refinedstorage:1024k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "3B142B777E2EB9E9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "3EB6E6A2DCA27C39"
+			tasks: [{
+				id: "7C624AC9FF1242B2"
+				type: "item"
+				item: "refinedstorage:4096k_fluid_storage_disk"
+			}]
+			rewards: [{
+				id: "14DEBFDACE4B6C51"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "409D0E30CD2B9962"
+			tasks: [{
+				id: "77F09A485464DFE7"
+				type: "item"
+				item: "extrastorage:disk_256k"
+			}]
+			rewards: [{
+				id: "246C2F05E81AF680"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "10892E98459161E8"
+			tasks: [{
+				id: "2A3496A4C1EBAFC8"
+				type: "item"
+				item: "extrastorage:disk_1024k"
+			}]
+			rewards: [{
+				id: "42B01EB6C49006A9"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "51AD0A0CD98DD8B1"
+			tasks: [{
+				id: "2E35C58DF0722C62"
+				type: "item"
+				item: "extrastorage:disk_4096k"
+			}]
+			rewards: [{
+				id: "3941EF1DD6599647"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "4B5BCD5174F0C0C5"
+			tasks: [{
+				id: "7808A1CDA16F1EF4"
+				type: "item"
+				item: "extrastorage:disk_16384k"
+			}]
+			rewards: [{
+				id: "5492ED6E33893B43"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "538B45C6098C879E"
+			tasks: [{
+				id: "22B3AB2ED0B1C4E7"
+				type: "item"
+				item: "extrastorage:disk_16384k_fluid"
+			}]
+			rewards: [{
+				id: "149F209624100024"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "79A0BA02FDA2EFCF"
+			tasks: [{
+				id: "0E3690D09B46C386"
+				type: "item"
+				item: "extrastorage:disk_65536k_fluid"
+			}]
+			rewards: [{
+				id: "0EAEAF97548FA3BA"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "39D1C072F0DE55D1"
+			tasks: [{
+				id: "40CDE8F33E0397A1"
+				type: "item"
+				item: "extrastorage:disk_262144k_fluid"
+			}]
+			rewards: [{
+				id: "660B3B1293CB8E71"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			dependencies: ["5ECFB820FAAA0908"]
+			id: "6D552625E808B987"
+			tasks: [{
+				id: "717D6C7BCE80B92A"
+				type: "item"
+				item: "extrastorage:disk_1048576k_fluid"
+			}]
+			rewards: [{
+				id: "2E92F9DC93D549FF"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			title: "Grid"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Portal into the Matrix"
+			dependencies: ["451B9FA8E2351956"]
+			id: "1689A2B12794AA37"
+			tasks: [{
+				id: "039D3E014BE173CD"
+				type: "item"
+				title: "Any #refinedstorage:grid"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:grid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4F74FA6346B49D7E"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Crafting Grid"
+			x: 2.0d
+			y: -0.5d
+			subtitle: "It's a grid AND a crafting table?"
+			description: ["The crafting grid is an upgraded Grid that also allows you to craft item, pulling the resources needed from both your inventory AND the stored items."]
+			dependencies: ["1689A2B12794AA37"]
+			id: "7AFF0785ED21152B"
+			tasks: [{
+				id: "4A8E14656106AB0D"
+				type: "item"
+				title: "Any #refinedstorage:crafting_grid"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:crafting_grid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "306C317D476CC7AC"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Pattern Grid"
+			x: 3.5d
+			y: 2.0d
+			subtitle: "Keeping track of it all"
+			description: ["The pattern grid allows you to remotely place crafting patterns in crafters on the network."]
+			dependencies: ["1689A2B12794AA37"]
+			id: "78D3EBEF9AF6CAE8"
+			tasks: [{
+				id: "6B554991966991B8"
+				type: "item"
+				title: "Any #refinedstorage:pattern_grid"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:pattern_grid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "61B9A83EA15378D2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Fluid Grid"
+			x: 2.0d
+			y: 2.5d
+			subtitle: "I always store my water in computers"
+			description: ["The fluid grid is a grid that allows you to access the fluid storage system."]
+			dependencies: ["1689A2B12794AA37"]
+			id: "714C2FBB5C0225D6"
+			tasks: [{
+				id: "3B2770C50CA6AD82"
+				type: "item"
+				title: "Any #refinedstorage:fluid_grid"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:fluid_grid"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4BFE732832AE2863"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			icon: "refinedstorage:wireless_grid"
+			x: 5.0d
+			y: 1.0d
+			subtitle: "Grids without borders"
+			description: ["The wireless grid allows you to access your network from anywhere within range of the wireless transmitter."]
+			dependencies: ["1689A2B12794AA37"]
+			id: "3421E3F8D4D3AD3F"
+			tasks: [
+				{
+					id: "4A62BFD4F82526E1"
+					type: "item"
+					item: "refinedstorage:wireless_grid"
+				}
+				{
+					id: "61EC26C2AA693D2C"
+					type: "item"
+					item: "refinedstorage:wireless_transmitter"
+				}
+			]
+			rewards: [{
+				id: "2A56DE3818368F70"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Crafting Monitor"
+			x: 3.5d
+			y: 0.0d
+			description: ["The crafting monitor will show any in-progress automated crafts happening."]
+			dependencies: ["1689A2B12794AA37"]
+			id: "4271508D4F19610F"
+			tasks: [{
+				id: "5F1D82711EF7DF55"
+				type: "item"
+				title: "Any #refinedstorage:crafting_monitor"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:crafting_monitor"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B1CCB080434C3FA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			description: ["Add up to 4 of these to the wireless transmitter to increase the range."]
+			dependencies: ["3421E3F8D4D3AD3F"]
+			id: "4DCE82A063767B9C"
+			tasks: [{
+				id: "3C649AC5ED5EE505"
+				type: "item"
+				item: "refinedstorage:range_upgrade"
+			}]
+			rewards: [{
+				id: "4741975A950C1527"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			description: ["Allows the wireless grid to work anywhere within the current dimension."]
+			dependencies: ["4DCE82A063767B9C"]
+			id: "36E4AF4CA5BDEE7D"
+			tasks: [{
+				id: "215F570197C4E83F"
+				type: "item"
+				item: "rsinfinitybooster:infinity_card"
+			}]
+			rewards: [{
+				id: "683ACE72908EDC73"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.0d
+			description: ["Allows the wireless grid to be used across dimensions."]
+			dependencies: ["36E4AF4CA5BDEE7D"]
+			id: "0C462DAA7CD2EE70"
+			tasks: [{
+				id: "34E44EA6D300303B"
+				type: "item"
+				item: "rsinfinitybooster:dimension_card"
+			}]
+			rewards: [{
+				id: "54821B7A606EAA48"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			title: "Crafter"
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Auto-crafting"
+			description: ["Crafters accept crafting patterns and will either attempt to craft them or will push ingredients in the machine the crafter is facing (for something like a smelting recipe)."]
+			dependencies: ["451B9FA8E2351956"]
+			id: "5F9415AD12D92496"
+			tasks: [{
+				id: "2444ED34972A3436"
+				type: "item"
+				title: "Any #refinedstorage:crafter"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "refinedstorage:crafter"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4876C15ACA5A9FF4"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["5F9415AD12D92496"]
+			id: "4680EBE593491BD1"
+			tasks: [{
+				id: "6697CE5EF5783AB0"
+				type: "item"
+				item: "extrastorage:iron_crafter"
+			}]
+			rewards: [{
+				id: "2B4770CDE5477CAD"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["4680EBE593491BD1"]
+			id: "5EEBB7B95899AD9D"
+			tasks: [{
+				id: "222494D2C6BC74DB"
+				type: "item"
+				item: "extrastorage:gold_crafter"
+			}]
+			rewards: [{
+				id: "47434BA3C55DC66C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			dependencies: ["5EEBB7B95899AD9D"]
+			id: "7E3AE9CC630DFE2F"
+			tasks: [{
+				id: "55616F897E9EA960"
+				type: "item"
+				item: "extrastorage:diamond_crafter"
+			}]
+			rewards: [{
+				id: "2D2B4ED957F46839"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			dependencies: ["7E3AE9CC630DFE2F"]
+			id: "329112C5520B34F0"
+			tasks: [{
+				id: "4D9055FA1842713A"
+				type: "item"
+				item: "extrastorage:netherite_crafter"
+			}]
+			rewards: [{
+				id: "1C2CE3C9F911894E"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["451B9FA8E2351956"]
+			id: "4475DC309C7B4733"
+			tasks: [{
+				id: "2A77035593E60E3F"
+				type: "item"
+				item: "refinedstorage:interface"
+			}]
+			rewards: [{
+				id: "2B54BE3317219C8C"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			dependencies: ["451B9FA8E2351956"]
+			id: "72BB2A0C2CC317F2"
+			tasks: [{
+				id: "7F5CD932F264D515"
+				type: "item"
+				item: "refinedstorage:external_storage"
+			}]
+			rewards: [{
+				id: "3E839A58739FE095"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.5d
+			dependencies: ["451B9FA8E2351956"]
+			id: "73AE60BCF4C40794"
+			tasks: [{
+				id: "69DB194A5D5D92BA"
+				type: "item"
+				item: "refinedstorage:importer"
+			}]
+			rewards: [{
+				id: "37CA8D0E104C8BB5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.5d
+			dependencies: ["451B9FA8E2351956"]
+			id: "07FAC9E4778065E7"
+			tasks: [{
+				id: "1BF306FC59EB4C4F"
+				type: "item"
+				item: "refinedstorage:exporter"
+			}]
+			rewards: [{
+				id: "11B22BD0F7062A83"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 5.0d
+			dependencies: ["73AE60BCF4C40794"]
+			id: "372F4B789C417218"
+			tasks: [{
+				id: "0A17D9749BBBA323"
+				type: "item"
+				item: "extrastorage:advanced_importer"
+			}]
+			rewards: [{
+				id: "2DCB5DB878A6607B"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.0d
+			dependencies: ["07FAC9E4778065E7"]
+			id: "11328FB86ED0ABA9"
+			tasks: [{
+				id: "70E35902A3C68087"
+				type: "item"
+				item: "extrastorage:advanced_exporter"
+			}]
+			rewards: [{
+				id: "791BB4204574A540"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

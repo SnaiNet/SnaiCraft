@@ -1,0 +1,313 @@
+{
+	id: "16775C6F4EC6B2CD"
+	group: "7604FE20C6A7FFA7"
+	order_index: 0
+	filename: "in_the_beginning"
+	title: "In the beginning..."
+	icon: "minecraft:oak_sapling"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Tree Mugger"
+			icon: "minecraft:oak_log"
+			x: -2.0d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "Punch tree, get wood"
+			description: ["Things start out as they always should..."]
+			dependencies: ["618724E404C9D21F"]
+			size: 2.0d
+			id: "0A4073E7B0863161"
+			tasks: [{
+				id: "1EB641ED1BB873ED"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "233F41693F00DAE6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "31C249A97D26AD67"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Let's get it started"
+			description: [
+				"This book will guide you through the many features of this pack. Quests will be designed to progress in logical steps, but gating will be minimal and you should be free to progress as you see fit."
+				""
+				"**The quest book is not an exhaustive look at all the mods and features, as some cannot be reasonably captured in a quest line. Quests will be designed to get you far enough into a mod to discover what it is capable of. Do explore the mod list, mod manuals and guide books, JEI, and Discord for more details!"
+			]
+			id: "618724E404C9D21F"
+			tasks: [{
+				id: "6BEB7056F309EE2E"
+				type: "checkmark"
+				title: "Getting Started"
+			}]
+			rewards: [{
+				id: "0A78C1347FEE6548"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Tinker Town"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 0.0f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: -0.5d
+			y: -2.0d
+			subtitle: "Stone tools of a different nature"
+			description: [
+				"Tinker's Construct and it's addons allow for tools that are both upgradeable and customizable."
+				"To start, you'll need patterns, a part builder, and a tinker station."
+			]
+			dependencies: ["0A4073E7B0863161"]
+			id: "1EDEEA03495102E1"
+			tasks: [
+				{
+					id: "1482B0EEF0F9A524"
+					type: "item"
+					title: "Any #tconstruct:tables"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:tables"
+						}
+					}
+				}
+				{
+					id: "4A5EB0AD37F0B2B8"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 12L
+				}
+				{
+					id: "49CDDC4D86EA925E"
+					type: "item"
+					title: "Any Completed Tinker Tool"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:modifiable/harvest"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6D42FB05B36642A6"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "We are Grout"
+			icon: "tconstruct:grout"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Once more into the fire"
+			description: [
+				"In order to make use of metal in your tools, you'll need something to melt it down. Enter the smeltery!"
+				""
+				"Prior to building a full smeltery, you'll need to build the smaller \"melter\" to melt down some copper."
+			]
+			dependencies: ["1EDEEA03495102E1"]
+			id: "2476AA260853E783"
+			tasks: [
+				{
+					id: "30FA7401BFE985F3"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 64L
+				}
+				{
+					id: "00064E37B8132B73"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "4D0D731B0E09EE2C"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "7051098EAC924699"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+				{
+					id: "100A426A4D7A9C59"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "76722915C312F937"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+			rewards: [{
+				id: "008BED1EDFC5BE9D"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Putting the \"melt\" in smelting"
+			icon: "tconstruct:smeltery_controller"
+			x: 2.5d
+			y: -2.0d
+			subtitle: "Bubble bubble"
+			description: [
+				"The smeltery is a large multiblock structure that uses lava or other hot fuels to melt down metals and gems so they can be poured out into molds."
+				""
+				"Smelteries also double the amount metal in ores and chunks (1 ore = 2 ingots worth in molten metal)."
+			]
+			dependencies: ["2476AA260853E783"]
+			id: "6524E33909BD70B8"
+			tasks: [
+				{
+					id: "5DC24F5438355C9B"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "60E3A97159A9954C"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "52A6747E30424D36"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+				{
+					id: "5B8AD6DBA4A1F8F0"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "3D14D5CADE93C617"
+					type: "item"
+					title: "Any #tconstruct:seared_blocks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:seared_blocks"
+						}
+					}
+					count: 12L
+				}
+				{
+					id: "1E4EB4895E4ED8C6"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+			]
+			rewards: [{
+				id: "23C8A49678C0145C"
+				type: "loot"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			subtitle: "Bigger tools"
+			description: ["If you want to make the more advanced tools (hammers, excavators, cleavers, etc.) you're going to need to upgrade that puny little tinker station to something a bit more... manly?"]
+			dependencies: ["6524E33909BD70B8"]
+			id: "145798E3C83E1E7C"
+			tasks: [{
+				id: "482FD15BCFF6D6F1"
+				type: "item"
+				item: "tconstruct:tinkers_anvil"
+			}]
+			rewards: [
+				{
+					id: "2B553886B33FDF48"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "6DB6430BB362376A"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			subtitle: "Finders Keepers"
+			description: ["The nature's compass allows you to try to locate a specific biome. There are many biomes, so you may need to look for similar ones to what you want as well (e.g. taiga vs. taiga hills)"]
+			dependencies: ["0A4073E7B0863161"]
+			id: "3B6368C64A0A924B"
+			tasks: [{
+				id: "712249280F14EA85"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2FC97437105E773A"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+	]
+}

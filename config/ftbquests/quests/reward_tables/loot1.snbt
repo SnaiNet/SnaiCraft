@@ -1,0 +1,106 @@
+{
+	id: "34AD2FEF1FF1E255"
+	order_index: 0
+	title: "Basic Random Loot"
+	icon: "minecraft:chest"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "minecraft:oak_log", count: 32, weight: 36 }
+		{ item: "minecraft:stripped_oak_log", count: 32, weight: 36 }
+		{ item: "minecraft:apple", count: 16, weight: 36 }
+		{ item: "minecraft:diamond", weight: 16 }
+		{ item: "minecraft:redstone_block", weight: 35 }
+		{ item: "minecraft:grass_block", count: 16, weight: 32 }
+		{ item: "minecraft:sponge", weight: 32 }
+		{ item: "minecraft:bookshelf", count: 4, weight: 16 }
+		{ item: "minecraft:enchanted_golden_apple", weight: 4 }
+		{ item: "cyclic:apple_lofty_stature", weight: 4 }
+		{ item: "tconstruct:pattern", count: 8, weight: 16 }
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "taiga:adamant"
+				}
+			}
+		}
+		{ item: "minecraft:white_wool", count: 4, weight: 32 }
+		{ item: "immersiveengineering:seed", count: 8, weight: 12 }
+		{ item: "minecraft:piston", count: 2, weight: 16 }
+		{ item: "minecraft:slime_ball", count: 4, weight: 16 }
+		{ item: "storagedrawers:oak_full_drawers_1", count: 2, weight: 16 }
+		{ item: "minecraft:chest", count: 4, weight: 16 }
+		{ item: "smallships:bop_magic_rowboat", weight: 16 }
+		{
+			xp_levels: 5
+			type: "xp_levels"
+			weight: 8
+		}
+		{ item: "ironchest:dirt_chest", weight: 12 }
+		{ item: "oddwatermobs:angler_bucket_block", weight: 16 }
+		{ item: "rats:block_of_cheese", count: 2, weight: 16 }
+		{ item: "cookingforblockheads:cow_jar", weight: 2 }
+		{ item: "cookingforblockheads:cooking_table", weight: 4 }
+		{ item: "cookingforblockheads:sink", weight: 2 }
+		{
+			xp_levels: 1
+			type: "xp_levels"
+			weight: 32
+		}
+		{ item: "minecraft:lava_bucket", weight: 4 }
+		{
+			item: {
+				id: "cyclic:torch_launcher"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 16
+		}
+		{ item: "torchmaster:megatorch", weight: 8 }
+		{ item: "naturesaura:ancient_sapling", count: 4, weight: 8 }
+		{ item: "industrialforegoing:pitiful_generator", weight: 16 }
+		{ item: "powah:energy_cell_basic" }
+		{ item: "industrialforegoing:sewer", weight: 4 }
+		{ item: "miniutilities:angel_block", weight: 8 }
+		{ item: "minecolonies:supplycampdeployer", weight: 4 }
+		{ item: "tmechworks:drawbridge", weight: 4 }
+		{ item: "biomesoplenty:magic_sapling", count: 4, weight: 8 }
+		{ item: "minecraft:jukebox", weight: 16 }
+		{ item: "minecraft:spruce_log", count: 32, weight: 35 }
+		{ item: "minecraft:stripped_spruce_log", count: 32, weight: 35 }
+		{ item: "minecraft:birch_log", count: 32, weight: 35 }
+		{ item: "minecraft:stripped_birch_log", count: 32, weight: 35 }
+		{ item: "minecraft:stripped_jungle_log", count: 32, weight: 35 }
+		{ item: "minecraft:acacia_log", count: 32, weight: 35 }
+		{ item: "minecraft:stripped_acacia_log", count: 32, weight: 35 }
+		{ item: "minecraft:dark_oak_log", count: 32, weight: 35 }
+		{ item: "minecraft:stripped_dark_oak_log", count: 32, weight: 35 }
+		{ item: "cookingforblockheads:fridge", count: 2, weight: 4 }
+		{ item: "botania:horn_grass", weight: 4 }
+		{ item: "farmersdelight:bacon_and_eggs", count: 6, weight: 12 }
+		{ item: "farmersdelight:sweet_berry_cheesecake_slice", count: 8, weight: 12 }
+		{ item: "farmersdelight:hamburger", count: 4, weight: 12 }
+		{ item: "farmersdelight:honey_glazed_ham", count: 4, weight: 12 }
+		{ item: "farmersdelight:pasta_with_meatballs", count: 6, weight: 12 }
+		{ item: "croptopia:grilled_cheese", count: 6, weight: 12 }
+		{ item: "croptopia:coffee", count: 12, weight: 12 }
+		{ item: "croptopia:limeade", count: 12 }
+		{ item: "croptopia:fried_chicken", count: 6, weight: 12 }
+		{ item: "croptopia:figgy_pudding", count: 4, weight: 12 }
+		{ item: "croptopia:beef_wellington", count: 2, weight: 12 }
+		{ item: "artifacts:whoopee_cushion", weight: 8 }
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 16777215
+		string_id: "basicloot"
+	}
+}

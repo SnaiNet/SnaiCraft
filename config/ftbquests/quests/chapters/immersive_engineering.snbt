@@ -1,0 +1,739 @@
+{
+	id: "153BFCBEFCACCEB1"
+	group: "52B64564C2528367"
+	order_index: 2
+	filename: "immersive_engineering"
+	title: "Immersive Engineering"
+	icon: "immersiveengineering:manual"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -8.5d
+			y: 0.5d
+			subtitle: "Stop! Engineer's smacking implement time."
+			description: ["The engineer's hammer is the starting point for Immersive Engineering. Since much of the mod is based around large, multiblock structures, the hammer is used to complete them by right-clicking on the appropriate block. See manual for details."]
+			id: "13E80A1F231813F1"
+			tasks: [{
+				id: "639317C1E580BA14"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4BD025DB56B53DBF"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.5d
+			subtitle: "Lines of coke ovens"
+			description: [
+				"Coke ovens are the first multi-block in IE. They're built as a 3x3x3 cube of coke bricks."
+				""
+				"The coke oven is used to turn coal into coal coke (or logs into charcoal), producing creosote oil as a by-product. "
+			]
+			dependencies: ["13E80A1F231813F1"]
+			id: "1B924F1B4F9F5F80"
+			tasks: [{
+				id: "580B95C2CEF8CDBD"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "079C9BD3AEDA8CB2"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.5d
+			subtitle: "Crude but effective"
+			description: ["The first way you can produce steel in IE. This 3x3x3 structure is slow, so you'll want to upgrade to the improved version as soon as possible."]
+			dependencies: ["1B924F1B4F9F5F80"]
+			id: "72E98876003FD005"
+			tasks: [{
+				id: "5246D325D7ADE14E"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "11A826D73DC5580A"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Steel Ingots"
+			icon: "immersiveengineering:ingot_steel"
+			x: -2.5d
+			y: 0.5d
+			subtitle: "Steely Dan"
+			description: ["Your first steel! My advice is to use it to upgrade your blast furnace so you can get more faster."]
+			dependencies: ["72E98876003FD005"]
+			id: "4E0977A55E17D73A"
+			tasks: [{
+				id: "05B59515C14DA3FE"
+				type: "item"
+				title: "Any #forge:ingots/steel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [{
+				id: "32881E7AABE3FD63"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.5d
+			subtitle: "Projecting your problems"
+			description: ["The projector is a handy tool that let's you visualize one of the larger multiblock machines to help you construct them layer by layer."]
+			dependencies: ["13E80A1F231813F1"]
+			id: "2A0D401B991E37E7"
+			tasks: [{
+				id: "332C3A45CB57C4C5"
+				type: "item"
+				item: "immersivepetroleum:projector"
+			}]
+			rewards: [{
+				id: "26BC4DE49A9CE8CF"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			icon: "immersiveengineering:blastbrick_reinforced"
+			x: -0.5d
+			y: 0.5d
+			subtitle: "The upgrade!"
+			description: ["Dismantle your original blast furnace and combine each block with a steel plate to get the improved bricks. Then re-place in a 3x3x3 with a hopper on the top-middle to complete the improved blast furnace. This can accept preheaters on the sides which will speed things up further."]
+			dependencies: ["4E0977A55E17D73A"]
+			id: "140911834FB0B699"
+			tasks: [
+				{
+					id: "49837C730445FA6A"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "548F3CDB1F69C293"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [{
+				id: "08F051EB8900333F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.5d
+			subtitle: "How to convey this..."
+			description: ["Conveyor belts allow you to move items around. There are also other types and covered variants."]
+			dependencies: ["13E80A1F231813F1"]
+			id: "5B7E5C6AE5A2806B"
+			tasks: [{
+				id: "3D157C2DF31567D2"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+				count: 16L
+			}]
+			rewards: [{
+				id: "11DE9D3A937C7A2E"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.5d
+			subtitle: "Spin me right 'round"
+			description: ["The kinetic dynamo is your first generator from IE. It accepts either a windmill or up to 3 water wheels and generates power."]
+			dependencies: ["13E80A1F231813F1"]
+			id: "7183D31975CA6406"
+			tasks: [{
+				id: "74C22405D3015DA2"
+				type: "item"
+				item: "immersiveengineering:dynamo"
+			}]
+			rewards: [{
+				id: "56981670334C141D"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 4.5d
+			subtitle: "A gust of wind"
+			description: ["Produces power based on the wind. Place high up for best results."]
+			dependencies: ["7183D31975CA6406"]
+			id: "5230C6EBFB0F6EE3"
+			tasks: [{
+				id: "3EBBA1B5AD8265DF"
+				type: "item"
+				item: "immersiveengineering:windmill"
+			}]
+			rewards: [{
+				id: "66713FBCDEAF5EBC"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.5d
+			subtitle: "The water front"
+			description: ["Add up to 3 to one kinetic dynamo. The more sides touching flowing water, the more power it outputs."]
+			dependencies: ["7183D31975CA6406"]
+			id: "2CCC7543BA8D0B25"
+			tasks: [{
+				id: "20243E26285EF09A"
+				type: "item"
+				item: "immersiveengineering:watermill"
+			}]
+			rewards: [{
+				id: "492B6C077B19338A"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.5d
+			subtitle: "Alloy there!"
+			description: ["The alloy kiln is a 2x2x2 structure that allows you to alloy two metals together, such as silver and gold to get electrum."]
+			dependencies: ["13E80A1F231813F1"]
+			id: "1B7F0C362DC9849C"
+			tasks: [{
+				id: "12C0DC797750E257"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [{
+				id: "346C02600778ACDF"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			subtitle: "A warm breeze"
+			description: ["2 preheaters can be added to the sides of the improved blast furnace. Powering these (from the top) will greatly improve the speed at which the blast furnace works."]
+			dependencies: ["140911834FB0B699"]
+			id: "0699B7A95E30CEE3"
+			tasks: [{
+				id: "1B9BB8DDF96CA9EC"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+				count: 2L
+			}]
+			rewards: [{
+				id: "134EB74AE54323A6"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 2.5d
+			subtitle: "Ice Ice Lava"
+			description: ["Generates power from heat differentials. Place hot and cold blocks on opposing sides to generate power. More power is generated from higher temperature differences (try uranium blocks and packed ice)"]
+			dependencies: ["13E80A1F231813F1"]
+			id: "1C96D0FE597875FD"
+			tasks: [{
+				id: "145CBE75F0786A6B"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+			rewards: [{
+				id: "42F361339AA4A9BC"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 6.0d
+			subtitle: "Come sail away"
+			description: ["Add these to a placed windmill to increase it's efficiency and output."]
+			dependencies: ["5230C6EBFB0F6EE3"]
+			id: "3DDE7AFD072690A9"
+			tasks: [{
+				id: "2EF71D0A13BA64C4"
+				type: "item"
+				item: "immersiveengineering:windmill_sail"
+				count: 8L
+			}]
+			rewards: [{
+				id: "0A91B8FBF091DB45"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.5d
+			subtitle: "Treat me right"
+			description: ["Treated wood is used in many of the recipes in IE. It can be made by combining any wood planks with the creosote oil from the coke oven."]
+			dependencies: ["1B924F1B4F9F5F80"]
+			id: "0A729DAF65981388"
+			tasks: [{
+				id: "707D9A35D583A4C6"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 32L
+			}]
+			rewards: [{
+				id: "172E37DB44933F8D"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			subtitle: "EZ Shulker"
+			description: ["The wooden storage crate retains it's inventory when broken, thus acting like a cheaper shulker box."]
+			dependencies: ["0A729DAF65981388"]
+			id: "5C732F6D4CD6B1AE"
+			tasks: [{
+				id: "051897D978F4114E"
+				type: "item"
+				item: "immersiveengineering:crate"
+			}]
+			rewards: [{
+				id: "581EDF1B304D237D"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -10.5d
+			y: -1.5d
+			subtitle: "A garden of glass"
+			description: ["The Garden Cloche allows you to grow plants in an easily automatable way. Just add water and fertilizer for speedy plant growth."]
+			dependencies: ["13E80A1F231813F1"]
+			id: "2F627CF2C2BE8680"
+			tasks: [{
+				id: "42FAA709A56DDB1D"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+			rewards: [{
+				id: "757701A01EAC4C7F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Crusher"
+			x: -1.0d
+			y: 2.0d
+			subtitle: "Bone Crusher"
+			description: ["The crusher is a large multiblock machine designed to crush ores and chunks into multiple dusts, effectively double your yield."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "654BC827DC408B30"
+			tasks: [{
+				id: "55BA616A5AED2BAE"
+				type: "observation"
+				icon: "immersiveengineering:crusher"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "04188FD796B832AE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			subtitle: "Multiblock creations"
+			description: ["These quests are \"observation\" quests and are completed by looking at the completed and formed builds. See the engineer's manual for building guides for each (or use the projector to help you)."]
+			dependencies: ["4E0977A55E17D73A"]
+			id: "1DE229E5142A096E"
+			tasks: [{
+				id: "3C73956F6502B374"
+				type: "checkmark"
+				title: "The Big Machines"
+			}]
+		}
+		{
+			title: "Sawmill"
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Sawzall"
+			description: ["This machine processes logs into planks with a better return. Also produces sawdust as a byproduct."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "12594535AF8E0B5D"
+			tasks: [{
+				id: "586208446ECEA6B1"
+				type: "observation"
+				icon: "immersiveengineering:sawmill"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "3CC29DEAF74124B9"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Metal Press"
+			x: -0.5d
+			y: 4.0d
+			subtitle: "Stamp out the problem"
+			description: ["The metal press is used for mass producing components such as metal plates, wires, and rods. Consider making one of these per type of part you're looking to automate."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "2FEC1C22DC041A5D"
+			tasks: [{
+				id: "4A89A670041E15B3"
+				type: "observation"
+				icon: "immersiveengineering:metal_press"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "508342236C4F63EA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Assembler"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "The circle goes in... That's right, the square hole!"
+			description: ["An automated assembly machine. You can program a recipe and feed it ingredients (including fluids) and it'll craft the output."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "2E694C06599C6585"
+			tasks: [{
+				id: "699C41E74B510855"
+				type: "observation"
+				icon: "immersiveengineering:assembler"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "78E6709F8297E0A0"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Fermenter"
+			x: -2.0d
+			y: 5.5d
+			subtitle: "Not quite vino..."
+			description: ["The fermenter processes plant matter into ethanol."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "5EDC348B0381E0DD"
+			tasks: [{
+				id: "1A94581FDBFC5AD0"
+				type: "observation"
+				icon: "immersiveengineering:fermenter"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "1C81614E478AE329"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Industrial Squeezer"
+			x: -3.0d
+			y: 5.5d
+			subtitle: "Ex-Squeeze me?"
+			description: ["The squeezer processed seeds down into plant oil."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "585EA76407F027B7"
+			tasks: [{
+				id: "6457F7670F0435DB"
+				type: "observation"
+				icon: "immersiveengineering:squeezer"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "55214D82B2BBFA51"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Refinery"
+			x: -2.5d
+			y: 7.0d
+			subtitle: "Burn Bio Burn"
+			description: ["The refinery take both plant oil and ethanol to produce biodiesel."]
+			dependencies: [
+				"585EA76407F027B7"
+				"5EDC348B0381E0DD"
+			]
+			id: "6E46C7E7EE40601C"
+			tasks: [{
+				id: "42E9C833185FD210"
+				type: "observation"
+				icon: "immersiveengineering:refinery"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "08F6C31D57D1028B"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Diesel Generator"
+			x: -2.5d
+			y: 8.5d
+			subtitle: "Fueled by... fuel..."
+			description: ["The diesel generator burns either diesel OR biodiesel to generate a hefty amount of power."]
+			dependencies: [
+				"6E46C7E7EE40601C"
+				"68107B75B906E208"
+			]
+			dependency_requirement: "one_completed"
+			id: "065A81DA18BA80F3"
+			tasks: [{
+				id: "03670902A6B04123"
+				type: "observation"
+				icon: "immersiveengineering:diesel_generator"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "3AD1129A3AEDA33E"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Pumpjack"
+			icon: "immersivepetroleum:pumpjack"
+			x: -4.0d
+			y: 5.0d
+			subtitle: "Black Gold"
+			description: ["Tired of that \"bio\" fuel? The pumpjack can pull up good old fashioned petroleum to use instead. Use the core sample drill to find a good spot to place the pumpjack for best results."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "377D45FBAFA0E69E"
+			tasks: [
+				{
+					id: "41CFDBCCAEC02FA7"
+					type: "observation"
+					icon: "immersivepetroleum:pumpjack"
+					timer: 0L
+					observe_type: 0
+					to_observe: ""
+				}
+				{
+					id: "2D5940D8F79DF030"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+			]
+			rewards: [{
+				id: "10798E5CA5D7F9F4"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Distillation Tower"
+			x: -4.0d
+			y: 7.0d
+			subtitle: "Tower of Power"
+			description: ["The distillation tower is a massive structure that takes crude oil from the pumpjacks and processes it into usable diesel fuel as well as several other byproducts such as lubricant."]
+			dependencies: ["377D45FBAFA0E69E"]
+			id: "68107B75B906E208"
+			tasks: [{
+				id: "6058797C9F5C0E75"
+				type: "observation"
+				icon: "immersivepetroleum:distillationtower"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [{
+				id: "09D3F73D132C2CC5"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: -4.5d
+			y: 4.0d
+			subtitle: "Zip Zap"
+			description: ["The Arc Furnace uses energy to cook items quickly and can even be used to make steel even faster than the improved blast furnace. Requires graphite rods to function."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "55841AF573002364"
+			tasks: [
+				{
+					id: "40ABEA9288F9A985"
+					type: "observation"
+					icon: "immersiveengineering:arc_furnace"
+					timer: 0L
+					observe_type: 0
+					to_observe: ""
+				}
+				{
+					id: "3F0BB55101D006FE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:graphite_electrode"
+						Count: 1b
+						tag: {
+							graphDmg: 0
+						}
+					}
+					count: 3L
+				}
+			]
+			rewards: [{
+				id: "20DE9A4FF0AB7976"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			title: "Excavator"
+			icon: "immersiveengineering:excavator"
+			x: -4.5d
+			y: 3.0d
+			subtitle: "Dredging the core"
+			description: ["The excavator is a large machine that generates ores based on where it is placed. Requires the bucket wheel to be assembled as well. Use the core sample drill to determine what type of resources can be gotten from a given location."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "2367F47C5FACC339"
+			tasks: [
+				{
+					id: "5B88FCA19528BD4A"
+					type: "observation"
+					icon: "immersiveengineering:excavator"
+					timer: 0L
+					observe_type: 0
+					to_observe: ""
+				}
+				{
+					id: "642140D018624352"
+					type: "observation"
+					icon: "immersiveengineering:bucket_wheel"
+					timer: 0L
+					observe_type: 0
+					to_observe: ""
+				}
+				{
+					id: "61C960235E13E69A"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+			]
+			rewards: [
+				{
+					id: "54027BE5BEAE309B"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+				{
+					id: "54202B9F4EF384FF"
+					type: "random"
+					table_id: 5666581215129303126L
+				}
+			]
+		}
+		{
+			title: "Fluid Tank"
+			x: -4.0d
+			y: 2.0d
+			description: ["Used to store up to 512 buckets of a given liquid."]
+			dependencies: ["1DE229E5142A096E"]
+			id: "339208C486B76527"
+			tasks: [{
+				id: "34521334031759A3"
+				type: "observation"
+				icon: "immersiveengineering:tank"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [
+				{
+					id: "1C47486A3C01D502"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "0DC46D2500473FDD"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			title: "Item Silo"
+			x: -5.5d
+			y: 1.5d
+			description: ["Can store up to approximately 40k of one type of item."]
+			dependencies: ["339208C486B76527"]
+			id: "3A3AC5E8099B14A8"
+			tasks: [{
+				id: "4FABA10397A222D6"
+				type: "observation"
+				icon: "immersiveengineering:silo"
+				timer: 0L
+				observe_type: 0
+				to_observe: ""
+			}]
+			rewards: [
+				{
+					id: "347356FB9844B378"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "0B491E18E4DB0C03"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+	]
+}

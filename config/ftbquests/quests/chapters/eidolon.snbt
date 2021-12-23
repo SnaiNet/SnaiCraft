@@ -1,0 +1,399 @@
+{
+	id: "76210A3BB862EBE1"
+	group: "0C5896690659A687"
+	order_index: 2
+	filename: "eidolon"
+	title: "Eidolon"
+	icon: "eidolon:unholy_symbol"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: 0.0d
+			subtitle: "Pewterschmidt"
+			description: ["A basic crafting ingredient for much of the mod, Pewter can be made by combining iron and lead and smelting the blend into ingots."]
+			dependencies: ["6467DC43886AC4C8"]
+			id: "3946F81633944EDB"
+			tasks: [{
+				id: "49123EFEEB53FE86"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+				count: 16L
+			}]
+			rewards: [{
+				id: "376B29E26D96F599"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["3946F81633944EDB"]
+			id: "29553E9C5B2368DB"
+			tasks: [{
+				id: "126FEA160762CCBB"
+				type: "item"
+				item: "eidolon:brazier"
+			}]
+			rewards: [{
+				id: "63279C30236BEBCE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.0d
+			dependencies: ["3946F81633944EDB"]
+			id: "3139555C970E539B"
+			tasks: [{
+				id: "7523A7C5B89EF7F9"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+			rewards: [
+				{
+					id: "6008238F2A640EAE"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "2B5B31FDD1D8B4F7"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: [
+				"29553E9C5B2368DB"
+				"5A642A124D82E893"
+			]
+			dependency_requirement: "one_completed"
+			id: "1A88C78ABBE5D8B7"
+			tasks: [{
+				id: "12FF1916CE778477"
+				type: "item"
+				item: "eidolon:stone_hand"
+				count: 4L
+			}]
+			rewards: [{
+				id: "3D0C79D8DF217471"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -7.5d
+			y: 0.0d
+			subtitle: "Guide to the dark arts"
+			description: ["This is the guidebook for Eidolon. Use it to see many recipes and setups needed for them."]
+			id: "6467DC43886AC4C8"
+			tasks: [{
+				id: "4F0F695827205815"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+			rewards: [{
+				id: "3EECFA58016A847C"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			dependencies: ["3946F81633944EDB"]
+			id: "5A642A124D82E893"
+			tasks: [{
+				id: "79E3532516180CC2"
+				type: "item"
+				item: "eidolon:necrotic_focus"
+			}]
+			rewards: [{
+				id: "4D31F237F697CC25"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.5d
+			dependencies: ["3946F81633944EDB"]
+			id: "2F2B9BD509448D80"
+			tasks: [{
+				id: "013F4CFDD871FA8F"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+			rewards: [{
+				id: "21E25D1793FB1C8F"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.0d
+			dependencies: ["502D0B84095CECF7"]
+			id: "71E2851534D3C791"
+			tasks: [{
+				id: "13ABE2F53910CBE2"
+				type: "item"
+				item: "eidolon:candle"
+				count: 8L
+			}]
+			rewards: [{
+				id: "5D582BE943011593"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["502D0B84095CECF7"]
+			id: "27D31DBE04FD5A51"
+			tasks: [{
+				id: "39DA5280BED1BAFE"
+				type: "item"
+				item: "eidolon:straw_effigy"
+			}]
+			rewards: [{
+				id: "6725AD8C2D4149CA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.0d
+			subtitle: "Pray to me"
+			description: ["Setup the table as a 2x3 structure and place your straw effigy, mob skull, candle and anything else on top."]
+			dependencies: ["6467DC43886AC4C8"]
+			id: "502D0B84095CECF7"
+			tasks: [{
+				id: "35D8B8FB1B21CF6E"
+				type: "item"
+				item: "eidolon:wooden_altar"
+				count: 6L
+			}]
+			rewards: [{
+				id: "55E339917796E99A"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -11.0d
+			y: -2.0d
+			dependencies: ["502D0B84095CECF7"]
+			id: "53D3E6DEC0B39EAE"
+			tasks: [{
+				id: "73ADADF7FF75D74E"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+			rewards: [{
+				id: "547E4AFCEDEBAE06"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -11.0d
+			y: 2.0d
+			dependencies: ["502D0B84095CECF7"]
+			id: "4A7B774A5CE95EC9"
+			tasks: [{
+				id: "058CCA11203B6557"
+				type: "item"
+				item: "minecraft:wither_rose"
+			}]
+			rewards: [{
+				id: "22336353BF5B24E1"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -12.5d
+			y: 0.0d
+			dependencies: ["502D0B84095CECF7"]
+			id: "009A1EEFFF7E8018"
+			tasks: [{
+				id: "4F4CB87EC6E20F74"
+				type: "item"
+				item: "eidolon:stone_altar"
+				count: 6L
+			}]
+			rewards: [{
+				id: "35AA4232CC2CD11A"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			dependencies: [
+				"29553E9C5B2368DB"
+				"1A88C78ABBE5D8B7"
+			]
+			id: "67C31FEE4922C9D3"
+			tasks: [{
+				id: "4A3D866E67D10AA0"
+				type: "item"
+				item: "eidolon:soul_shard"
+				count: 16L
+			}]
+			rewards: [{
+				id: "591DF8777F85A2D5"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.5d
+			dependencies: [
+				"67C31FEE4922C9D3"
+				"3139555C970E539B"
+			]
+			id: "095D3F52D023CE03"
+			tasks: [{
+				id: "4C3C07532C70465D"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0BDA4CD598FC6FF0"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			dependencies: ["095D3F52D023CE03"]
+			id: "3C75C8701BFAEF19"
+			tasks: [{
+				id: "29F50114216B33ED"
+				type: "item"
+				item: "eidolon:goblet"
+			}]
+			rewards: [{
+				id: "6042FBE9BEA74995"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -6.5d
+			dependencies: ["2F2B9BD509448D80"]
+			id: "2F87CF25E6AAB617"
+			tasks: [{
+				id: "0A5439158C7D9234"
+				type: "item"
+				item: {
+					id: "eidolon:reaper_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "15B5C3BAF8DB4A19"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -7.0d
+			y: -6.5d
+			dependencies: ["2F2B9BD509448D80"]
+			id: "393F362CD0E97E57"
+			tasks: [{
+				id: "31D8A5285AAC012F"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+			rewards: [{
+				id: "0CFA2CA72C6005CD"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.5d
+			dependencies: ["2F2B9BD509448D80"]
+			id: "1EB6E130753B294A"
+			tasks: [{
+				id: "117007BF43E42461"
+				type: "item"
+				item: "eidolon:warded_mail"
+			}]
+			rewards: [{
+				id: "2582198FB5FD84FB"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			dependencies: ["2F2B9BD509448D80"]
+			id: "3D35342E3C39E442"
+			tasks: [{
+				id: "19306EB8813DA94B"
+				type: "item"
+				item: "eidolon:prestigious_palm"
+			}]
+			rewards: [{
+				id: "0674DFC0EE44AD1D"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -5.0d
+			dependencies: ["2F2B9BD509448D80"]
+			id: "73D02B88560C87B3"
+			tasks: [{
+				id: "6BD6A10511FB524B"
+				type: "item"
+				item: "eidolon:void_amulet"
+			}]
+			rewards: [{
+				id: "7976810685A1358C"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			x: -12.5d
+			y: 1.5d
+			dependencies: ["009A1EEFFF7E8018"]
+			id: "45A8EC5107D8E408"
+			tasks: [{
+				id: "01D06F273AD200F8"
+				type: "item"
+				item: "eidolon:unholy_effigy"
+			}]
+			rewards: [{
+				id: "7B42F01F85561153"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

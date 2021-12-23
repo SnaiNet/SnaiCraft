@@ -1,0 +1,203 @@
+{
+	id: "2D1EAB99E2C06FE9"
+	group: "711E9D4C67639EA8"
+	order_index: 3
+	filename: "bounties"
+	title: "Bounties"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Kill Any Dragon"
+			id: "69FBAA96F84C5E12"
+			tasks: [{
+				id: "167295CF7015EDF2"
+				type: "advancement"
+				icon: "iceandfire:dragon_skull_lightning"
+				advancement: "iceandfire:iceandfire/kill_if_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "33B447A6B4BCB7DB"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: "iceandfire:dragonarmor_dragonsteel_lightning_head"
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["69FBAA96F84C5E12"]
+			id: "76C73A2F8BAB4F93"
+			tasks: [{
+				id: "25EE7FD2DC599A3A"
+				type: "kill"
+				entity: "iceandfire:lightning_dragon"
+				value: 10L
+			}]
+			rewards: [{
+				id: "7A21CC20650E8253"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			icon: "iceandfire:dragonarmor_dragonsteel_fire_head"
+			x: -2.5d
+			y: -2.5d
+			dependencies: ["69FBAA96F84C5E12"]
+			id: "5EC53C8E9C01C110"
+			tasks: [{
+				id: "3E74FD155FD49B8E"
+				type: "kill"
+				entity: "iceandfire:fire_dragon"
+				value: 10L
+			}]
+			rewards: [{
+				id: "1E1B6FF513B0971D"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			icon: "iceandfire:dragonarmor_dragonsteel_ice_head"
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["69FBAA96F84C5E12"]
+			id: "63223221DBB01AE4"
+			tasks: [{
+				id: "2222AF6DC9AA409E"
+				type: "kill"
+				entity: "iceandfire:ice_dragon"
+				value: 10L
+			}]
+			rewards: [{
+				id: "3E13E292CDA13C74"
+				type: "random"
+				table_id: 2560477328574790324L
+			}]
+		}
+		{
+			icon: "iceandfire:sea_serpent_scales_blue"
+			x: -4.5d
+			y: 0.5d
+			id: "66D7FF2ACFEA660B"
+			tasks: [{
+				id: "6326EBF17DC04553"
+				type: "kill"
+				entity: "iceandfire:sea_serpent"
+				value: 1L
+			}]
+			rewards: [{
+				id: "2288CE73E665DB9A"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: {
+				id: "iceandfire:cyclops_eye"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: 0.5d
+			id: "3FD93511A5579834"
+			tasks: [{
+				id: "0C639950D78765F2"
+				type: "kill"
+				entity: "iceandfire:cyclops"
+				value: 1L
+			}]
+			rewards: [{
+				id: "26AF6DF3F9C45D56"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: {
+				id: "iceandfire:deathworm_gauntlet_yellow"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: 2.5d
+			id: "6B735CAFFBB64E67"
+			tasks: [{
+				id: "79FC733222B06974"
+				type: "kill"
+				entity: "iceandfire:deathworm"
+				value: 1L
+			}]
+			rewards: [{
+				id: "55026423593B5554"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: "iceandfire:siren_tear"
+			x: -4.5d
+			y: 2.5d
+			id: "41D58987AE264276"
+			tasks: [{
+				id: "51A5FC9F4E8ABA6D"
+				type: "kill"
+				entity: "iceandfire:siren"
+				value: 10L
+			}]
+			rewards: [{
+				id: "10218F33C61CA748"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: {
+				id: "iceandfire:gorgon_head"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: 4.5d
+			id: "37F05CFB9008C50E"
+			tasks: [{
+				id: "7E7B9ECD4A6BD448"
+				type: "kill"
+				entity: "iceandfire:gorgon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "7E62EF0DEB356A6F"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+		{
+			icon: "iceandfire:hydra_fang"
+			x: -4.5d
+			y: 4.5d
+			id: "58EC87AED9E231D4"
+			tasks: [{
+				id: "4BFCE675501BBB8E"
+				type: "kill"
+				entity: "iceandfire:hydra"
+				value: 1L
+			}]
+			rewards: [{
+				id: "67D674A8FBB94A65"
+				type: "random"
+				table_id: 8463138893034427203L
+			}]
+		}
+	]
+}

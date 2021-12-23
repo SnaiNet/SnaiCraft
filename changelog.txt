@@ -1,0 +1,228 @@
+1.3.3
+	Updated:
+		FORGE - 36.2.20 -> 36.2.22
+		Curios - 4.0.6.6 -> 4.0.6.7
+		Farmer's Delight - 0.5.3 -> 0.5.4
+		FTB Quests - 1605.3.2-build.72 -> 1605.3.6-build.76
+		Immersive Engineering - 5.0.5-140 -> 5.0.6-141
+		Immersive Petroleum - 3.3.0-8 -> 3.3.0-9
+		Occultism - 1.23.5 -> 1.23.6
+		Performant - 3.80m -> 3.81m
+		Storage Drawers - 8.3.0 -> 8.4.0
+		Twilight Forest - 4.0.546 -> 4.0.870
+		
+	Removed:
+		Mowzie's Mobs (Seems to be causing excessive TPS lag in worldgen)
+
+	Changed:
+		- Changed Steel reward in quest loot table to Emendatus Enigmatica version
+		- Made silicon in RS Questline accept any #forge:silicon
+		- Slightly reduced Aqueous Accumulator reward weight
+		- Removed Quests related to Mowzie's Mobs
+
+1.3.1
+	Added: 
+		CucumberLib
+		Mystical Agriculture (No secondary seeds will drop from plants. If you want multiple of a given plant, you craft multiple seeds.)
+		
+	Updated:
+		AP Tweaks - 1.2.0 -> 1.2.1
+		Architectury - 1.26.39 -> 1.26.40
+		Dark Paintings - 6.0.5 -> 6.0.9
+		KubeJS Thermal - 1605.1.4.build.3 -> 1605.1.4.build.4
+		Occultism - 1.23.3 -> 1.23.5
+		Sophisticated Backpacks - 3.12.2.432 -> 3.13.6.450
+
+	Changed:
+		- Fixed silicon and quartz glass furnace conflict: removed quartz glass smelting recipe and added a regular crafting recipe for it (8 quartz + 1 glass = 8 quartz glass).
+
+1.3.0
+	Added:
+		Artifacts
+		Enigmatic Legacy
+		ExpandAbility
+		GeckoLib
+		
+	Updated:
+		AP Tweaks - 1.1.5 -> 1.2.0
+		Apotheosis - 4.8.3 -> 4.8.4
+		Achitectury - 1.26.37 -> 1.26.39
+		AttributeFix - 10.1.2 -> 10.1.3
+		Cloth Config API - 4.12.41 -> 4.13.49
+		Create Additions - 20211202a -> 20211215b
+		Dark Paintings - 6.0.3 -> 6.0.5
+		Delogger - 3.0.3-build.19 -> 3.0.4-build.20
+		Drawers Tooltips - 2.1.0 -> 2.1.1
+		Enchantment Descriptions - 7.0.17 -> 7.0.18
+		Ender Chests - 1.7.8 -> 1.7.9
+		Ender Tanks - 1.9.6 -> 1.9.7
+		ExtraStorage - 1.5.1 -> 1.6.0
+		Farmer's Delight - 0.5.2 -> 0.5.3
+		Fast Workbench - 4.6.0 -> 4.6.1
+		Lootr - 0.0.9.29 -> 0.0.9.30
+		Macaw's Bridges - 2.0.0 -> 2.0.1
+		Macaw's Doors - 1.0.3 -> 1.0.5
+		Macaw's Fences - 1.0.1 -> 1.0.2
+		Macaw's Lights - 1.0.0 -> 1.0.2
+		Macaw's Trapdoors - 1.0.3 -> 1.0.4
+		Macaw's Windows - 2.0.0 -> 2.0.2
+		Occultism - 1.22.1 -> 1.23.3
+		Repurposed Structures Forge - 3.4.6 -> 3.4.7
+		Savage and Ravage - 3.1.0 -> 3.2.0
+		Snow! Real Magic - 2.8.2 -> 2.8.3
+		Trashcans - 1.0.10 -> 1.0.11
+		Upgrade Aquatic - 3.1.1 -> 3.1.2
+		
+	Changed:
+		- Fixed some quest loot rewards and added a couple options to the loot tables
+
+1.2.4
+	Changed:
+		- Made Lootr stop reporting "bad" loot chests that it can't convert. Was just clogging the logs and the chests in question are already reported and known to the author
+		- Reduced frequency of Ruby, Sapphire, Peridot, and Iridium
+		- Increased network timeouts to help some players with connecting to server
+		- Increase neutral mob limits to hopefully find a cow
+		- Increased (slightly) frequency of Apotheosis boss spawns
+
+1.2.3
+	Added:
+		Connectivity (to hopefully fix some of the networking packet issues)
+	
+	Changed:
+		- Updated RandomPatches config to allow for Connectivity to be added
+		- Added crafting recipe for Tinker's ingot cast
+		- Made Ender Dust recipes more fair/balanced and use #forge:dusts/ender tag
+
+
+1.2.2
+	Added:
+		Ender Chests - 1.7.8
+		
+	Updated:
+		CoFH Core -1.4.0.2 -> 1.4.0.6
+		Enchantment Descriptions - 7.0.12 -> 7.0.17
+		McJtyLib - 5.1.1 -> 5.1.2
+		Performant - 3.79m -> 3.80m
+		RFTools Base - 2.1.0 -> 2.1.1
+		RFTools Builder - 3.1.3 -> 3.1.4
+		RFTools Dimensions - 7.0.18-beta -> 7.0.19-beta
+		RFTools Power - 3.0.10 -> 3.0.11
+		RFTools Storage - 2.0.14 -> 2.0.15
+		RFTools Utility - 3.1.5 -> 3.1.6
+		Thermal Expansion - 1.4.1.2 -> 1.4.1.3
+		Thermal Foundation - 1.4.1.5 -> 1.4.1.7
+		Thermal Innovation - 1.4.1.2 -> 1.4.1.3
+		Toast Control - 4.3.1 -> 4.4.0
+		XNet - 3.0.14 -> 3.0.15
+	
+	Changed:
+		- Updated ender tank/chest quests, which were broken due to the items being removed.
+		- Updated quest rewards.
+		- Added log to stick and easy hopper recipes.
+
+1.2.1
+	Updated:
+		FORGE - 36.2.19 -> 36.2.20 (Fix for major exploit)
+
+1.2.0
+	Added:
+		BlockCarpentry
+		Ensorcellation
+		My Server is Compatible (Fixes server incompatible message on multiplayer screen)
+		Sapience (makes Piglins smarter and introduces reputation for trading with them)
+		Sit (allows you to sit on slabs or stairs)
+		Tesseract
+		Trash Slot
+	
+	Updated:
+		Archer's Paradox - 1.3.1 -> 1.4.0.1
+		Architectury API - 1.25.36 -> 1.26.37
+		CoFH Core - 1.3.1 -> 1.4.0.2
+		KubeJS Thermal - 1.4-build.2 -> 1.4-build.3
+		Occultism - 1.22.0 -> 1.22.1
+		Performant - 3.77m -> 3.79m
+		Snow! Real Magic! - 2.8.0 -> 2.8.2
+		Sophisticated Backpacks - 3.12.2.422 -> 3.12.2.432
+		Thermal Cultivation - 1.3.0 -> 1.4.1.3
+		Thermal Expansion - 1.3.0 -> 1.4.1.2
+		Thermal Foundation - 1.3.2 -> 1.4.1.5
+		Thermal Innovation - 1.3.0 -> 1.4.1.2
+		Thermal Locomotion - 1.3.0 -> 1.4.1.2
+		
+	Removed:
+		JAOPCA (seems to be causing issues and shouldn't be needed with AVSP scripts)
+		No Default Auto-Jump (Doesn't seem to work :( )
+		Village Spawn Point (Doesn't seem to work with Terraforged. I'll manually move the spawn on any official server that gets setup.)
+		
+	Changed:
+		- Added default options for video settings and added a keybind for quests (SHIFT + Q)
+		- Updated some scripts to allow gems and similar ores (coal, diamonds, redstone, etc) to drop themselves instead of chunks which would need to be processed
+		- Added a few more quest rewards
+		- Made Repeatable Quests actually work
+		- Re-enabled Repurposed Structures villages (may or may not have waystones or bounty boards in these)
+		- Made Stoneholm villages a slightly less common
+		- Tweaked Ice and Fire configs: Dragons and other structure now must be more than 5000 blocks from 0,0 (terraforged doesn't set spawn at or near 0,0). Reduced dragon prey search radius and increased max fly height (for large mountains).
+
+1.1.1
+
+	- Fixing Export issue
+
+1.1.0
+	
+	Updated:
+		Aquamirae - 1.1 -> 2.2
+		Aquamirae Music 
+		Botania - 420 -> 420.1
+		Cable Tiers - 0.541 ->0.542
+		CodeChicken Lib - 4.0.4.435 -> 4.0.5.438
+		Configured - 1.5.0 -> 1.5.1
+		Corail Tombstone - 6.6.2 -> 6.6.3
+		Create Crafts and Additions - 20211122b -> 20211202a
+		Extra Boats - 2.1.0 -> 2.1.1
+		Farmer's Delight - 0.5.1 -> 0.5.2
+		FTB Library - 1605.3.4-build.87 -> 1605.3.4-build.90
+		Integrated Dynamics - 1.10.5 -> 1.10.6
+		Integrated Terminals - 1.2.10 -> 1.2.11
+		Integrated Tunnels - 1.8.8 -> 1.8.9
+		Just Enough Resources - 0.12.1.128 -> 0.12.1.133
+		KubeJS - 1605.3.19-build.184 -> 1605.3.19-build.229
+		Lootr - 0.0.9.28 -> 0.0.9.
+		Mantle - 1.6.127 -> 1.6.147
+		McJtyLib - 5.1.0 -> 5.1.1
+		MineColonies - 1.0.177-BETA -> 1.0.205-BETA
+		Nature Expansion - 1.3 -> 1.4
+		Obscuria's Essentials 1.1 -> 2.2
+		Occultism - 1.21.0 -> 1.22.0
+		Performant - 3.76m -> 3.77m
+		RFTools Dimensions - 7.0.16-beta -> 7.0.18-beta
+		RFTools Utility - 3.1.4 -> 3.1.5
+		Snow! Real Magic - 2.5.7 -> 2.8.0
+		Sophisticated Backpacks - 3.12.0.407 -> 3.12.2.422
+		SuperMartijn642's Core Lib - 1.0.14a -> 1.0.15
+		Supplementaries - 0.17.11 -> 0.17.12b
+		Tinker's Construct - 3.2.1.296 -> 3.3.0.308
+		
+	Re-added:
+		FTB Chunks (not sure why this was removed)
+		Terraforged (It really is pretty and overworld 2 didn't work out)
+		
+	Removed:
+		Pack Menu (too lazy to set this up)
+		Overworld Two (Broke waystones, bounty boards, and probably a mess of other structures)
+		Oh the Biomes You'll Go (Breaks lakes in Terraforged and we had too many biomes anyway)
+		Macaw's Bridges - Oh the Biomes You'll Go (No longer needed because BYG is being removed)
+		EnderStorage (Causing rendering crashes)
+		DataFixerSlayer (Also messed with village generation (waystones and bounty boards))
+		
+	Changed:
+		- Added AVSP Scripts for KubeJS for ore unification through Emendatus Enigmatica (https://www.curseforge.com/minecraft/customization/avsps-easy-emendatus-enigmatica-scripts)
+		
+1.0.1
+
+	Removed:
+		Endless Oceans: Adventures (not working on dedicated server)
+		Geckolib
+
+1.0.0
+
+	Initial release

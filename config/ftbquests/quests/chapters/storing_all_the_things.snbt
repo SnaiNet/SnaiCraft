@@ -1,0 +1,652 @@
+{
+	id: "3CB048BC0FA2E96E"
+	group: "7604FE20C6A7FFA7"
+	order_index: 1
+	filename: "storing_all_the_things"
+	title: "Storing ALL the Things"
+	icon: "minecraft:ender_chest"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -33.0d
+			y: -17.5d
+			description: ["Iron Chests are chests that can be upgraded to have greater storage than normal chests."]
+			id: "1BA18A935C1179F6"
+			tasks: [{
+				id: "391EB58EF3933E12"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [
+				{
+					id: "196E3E009A113CC3"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "1D52C8128F8E18F9"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -33.0d
+			y: -15.5d
+			dependencies: ["1BA18A935C1179F6"]
+			id: "0BF0BED6F526D3D3"
+			tasks: [{
+				id: "7A0369763D5A45A5"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [
+				{
+					id: "022F011B997FBFD6"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "5DE793547A64623F"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -33.0d
+			y: -13.5d
+			dependencies: ["0BF0BED6F526D3D3"]
+			id: "1CE4127979F9DF16"
+			tasks: [{
+				id: "24F67537F92F7410"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+			rewards: [
+				{
+					id: "78889FC01A2AE2F9"
+					type: "random"
+					table_id: 3795742765022831189L
+				}
+				{
+					id: "65A7D69E7DD0E7D0"
+					type: "loot"
+					table_id: 3795742765022831189L
+				}
+			]
+		}
+		{
+			x: -31.5d
+			y: -17.5d
+			subtitle: "Like chests but rounder!"
+			description: ["Like the iron chests, these are upgradable storage based on the Barrel."]
+			id: "66535681C76A68EC"
+			tasks: [{
+				id: "59053FC3260B80C0"
+				type: "item"
+				item: "metalbarrels:iron_barrel"
+			}]
+			rewards: [{
+				id: "509B7B5E1714A07C"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -31.5d
+			y: -15.5d
+			dependencies: ["66535681C76A68EC"]
+			id: "2C6A20CDFD473137"
+			tasks: [{
+				id: "53F7D5835FFA9FB3"
+				type: "item"
+				item: "metalbarrels:gold_barrel"
+			}]
+			rewards: [{
+				id: "7BF120418B74AA20"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -31.5d
+			y: -13.5d
+			dependencies: ["2C6A20CDFD473137"]
+			id: "162CAEB5006FB91B"
+			tasks: [{
+				id: "0461FC0A31E72F23"
+				type: "item"
+				item: "metalbarrels:diamond_barrel"
+			}]
+			rewards: [{
+				id: "069BC86879EC6329"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			title: "Storage Drawers"
+			x: -32.0d
+			y: -5.0d
+			subtitle: "The junk drawer"
+			description: ["Storage drawers are meant to hold a lot of one particular item. Use these for bulk items like cobblestone."]
+			id: "121FE9F3EC8717B1"
+			tasks: [{
+				id: "2BF56DB4A52F0F1E"
+				type: "item"
+				title: "Any #storagedrawers:drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "29A8E7FF4D6BBE27"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 16
+			}]
+		}
+		{
+			x: -30.5d
+			y: -6.5d
+			subtitle: "Puttin' the squeeze on 'em"
+			description: [
+				"Compacting drawers accept an item and any of it's compressed or decompressed forms, automatically converting between them."
+				""
+				"Example: Putting in iron ingots would mean you could also pull out iron nuggets or blocks, if enough material were available."
+			]
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "4DB0AC0D2B1D32BC"
+			tasks: [{
+				id: "5A5B47232273781B"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+			rewards: [{
+				id: "3371E4268CEB794E"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -30.5d
+			y: -3.5d
+			subtitle: "One drawer to bind them..."
+			description: [
+				"The drawer controller can be used to interact with a large array of drawers. Any connected drawers (or \"trim\") are accessible through the controller block. "
+				""
+				"This is useful for integrating drawers into other storage systems."
+			]
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "2AC4C462CA828ED2"
+			tasks: [{
+				id: "291246118C0962D3"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+			rewards: [
+				{
+					id: "58491B16F6DFD75E"
+					type: "item"
+					item: "storagedrawers:oak_trim"
+					count: 8
+				}
+				{
+					id: "779E9B31C59BB831"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+			]
+		}
+		{
+			x: -34.0d
+			y: -4.0d
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "6E710E08D09D5AA2"
+			tasks: [{
+				id: "32C2D8BD28F9A53D"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+		}
+		{
+			x: -34.0d
+			y: -6.5d
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "32E9807641E44C8A"
+			tasks: [{
+				id: "07D2B07F283A20D9"
+				type: "item"
+				item: "storagedrawers:drawer_key"
+			}]
+			rewards: [{
+				id: "52BA64CC0764D4CB"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -33.0d
+			y: -6.5d
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "2222340CF6F8017F"
+			tasks: [{
+				id: "15A08AA4E557A03C"
+				type: "item"
+				item: "storagedrawers:quantify_key"
+			}]
+			rewards: [{
+				id: "28550E65E325B9F6"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -34.0d
+			y: -5.5d
+			dependencies: ["121FE9F3EC8717B1"]
+			id: "371A4492168E3591"
+			tasks: [{
+				id: "41CF4E8DC1FE2D37"
+				type: "item"
+				item: "storagedrawers:shroud_key"
+			}]
+			rewards: [{
+				id: "47BD567049F0A749"
+				type: "loot"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -36.0d
+			y: -4.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "209ADA9CF3E7A76F"
+			tasks: [{
+				id: "2A8C7236F2C1121E"
+				type: "item"
+				item: "storagedrawers:obsidian_storage_upgrade"
+			}]
+			rewards: [{
+				id: "3F6232F376D3CB4C"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -36.0d
+			y: -3.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "07203DBD63D9030C"
+			tasks: [{
+				id: "1FDB2C788A912559"
+				type: "item"
+				item: "storagedrawers:iron_storage_upgrade"
+			}]
+			rewards: [{
+				id: "6E1E4A9D7A988078"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -36.0d
+			y: -2.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "01337FEB1EC03B6A"
+			tasks: [{
+				id: "1F870F0633B0C1AC"
+				type: "item"
+				item: "storagedrawers:gold_storage_upgrade"
+			}]
+			rewards: [{
+				id: "3EA997D7A11F9499"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -35.0d
+			y: -2.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "6D5D175E843D5CBB"
+			tasks: [{
+				id: "32B4C421021B7741"
+				type: "item"
+				item: "storagedrawers:diamond_storage_upgrade"
+			}]
+			rewards: [{
+				id: "759397F0BE94A5D3"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -34.0d
+			y: -2.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "284409A12314C189"
+			tasks: [{
+				id: "5B376C1FE92C417A"
+				type: "item"
+				item: "storagedrawers:emerald_storage_upgrade"
+			}]
+			rewards: [{
+				id: "2F020E1F270DC7D3"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -36.0d
+			y: -5.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "37A2662F2D25CC7F"
+			tasks: [{
+				id: "46C3295CB3523287"
+				type: "item"
+				item: "storagedrawers:one_stack_upgrade"
+			}]
+			rewards: [{
+				id: "6F5C362C6BD74F3C"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -33.0d
+			y: -2.0d
+			dependencies: ["6E710E08D09D5AA2"]
+			id: "615AE7E481A6B029"
+			tasks: [{
+				id: "50B56C6E1ED2E294"
+				type: "item"
+				item: "storagedrawers:void_upgrade"
+			}]
+		}
+		{
+			x: -28.5d
+			y: -15.5d
+			id: "26F9C2070F49DD89"
+			tasks: [{
+				id: "0574921DE3B909CD"
+				type: "item"
+				item: "rftoolsstorage:modular_storage"
+			}]
+			rewards: [{
+				id: "4ECB19220BAF329D"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -28.5d
+			y: -13.5d
+			id: "4DE270489213119C"
+			tasks: [{
+				id: "338DF17C6CF386C5"
+				type: "item"
+				item: "rftoolsstorage:storage_scanner"
+			}]
+		}
+		{
+			x: -27.5d
+			y: -16.5d
+			dependencies: ["26F9C2070F49DD89"]
+			id: "424405409921DEBF"
+			tasks: [{
+				id: "0194E83AD3C6B98D"
+				type: "item"
+				item: "rftoolsstorage:storage_module0"
+			}]
+			rewards: [{
+				id: "021DF06E96FAF816"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -26.5d
+			y: -17.5d
+			dependencies: ["424405409921DEBF"]
+			id: "195C5964226012C5"
+			tasks: [{
+				id: "69E442D3A593A5F2"
+				type: "item"
+				item: "rftoolsstorage:storage_module1"
+			}]
+			rewards: [{
+				id: "73CDDE31BFED5C52"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -25.0d
+			y: -17.5d
+			dependencies: ["195C5964226012C5"]
+			id: "095B62416F067563"
+			tasks: [{
+				id: "494E01DAF65838B7"
+				type: "item"
+				item: "rftoolsstorage:storage_module2"
+			}]
+			rewards: [{
+				id: "43D269F97037E825"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -23.5d
+			y: -17.5d
+			dependencies: ["095B62416F067563"]
+			id: "0643CA4E44B630A2"
+			tasks: [{
+				id: "12B9EFD850578DC0"
+				type: "item"
+				item: "rftoolsstorage:storage_module3"
+			}]
+			rewards: [{
+				id: "50D1551C512FB6F8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -27.0d
+			y: -6.5d
+			id: "471710DDE08EF58D"
+			tasks: [{
+				id: "3DEF02907CDB0BAE"
+				type: "item"
+				title: "Any #forge:chests/ender"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/ender"
+					}
+				}
+				count: 2L
+			}]
+			rewards: [{
+				id: "7C2B45BFE0A460F2"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -27.0d
+			y: -3.5d
+			id: "54E6552209BFF21E"
+			tasks: [{
+				id: "23C6A31DE842294A"
+				type: "item"
+				title: "Any #forge:tanks/ender"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:tanks/ender"
+					}
+				}
+				count: 2L
+			}]
+			rewards: [{
+				id: "70F232EF1468D444"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -29.5d
+			y: -10.0d
+			id: "1C629884233F4AD4"
+			tasks: [{
+				id: "0658182D7117E923"
+				type: "item"
+				item: "krate:krate_small"
+			}]
+			rewards: [{
+				id: "017ED407BA8688AB"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -28.0d
+			y: -10.0d
+			dependencies: ["1C629884233F4AD4"]
+			id: "7D82974F870D51FA"
+			tasks: [{
+				id: "3AD899E717602CFC"
+				type: "item"
+				item: "krate:krate_basic"
+			}]
+			rewards: [{
+				id: "654381D2029BD8F3"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -26.5d
+			y: -10.0d
+			dependencies: ["7D82974F870D51FA"]
+			id: "5EBEA229CEA71940"
+			tasks: [{
+				id: "765EEE074DCCE0EF"
+				type: "item"
+				item: "krate:krate_big"
+			}]
+			rewards: [{
+				id: "3682935E2177A1B8"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -25.0d
+			y: -10.0d
+			dependencies: ["5EBEA229CEA71940"]
+			id: "7B7F465866BF66D5"
+			tasks: [{
+				id: "2AAF92581E8B096A"
+				type: "item"
+				item: "krate:krate_large"
+			}]
+			rewards: [{
+				id: "7BFD5BC16B521470"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -31.0d
+			y: -10.0d
+			dependencies: ["1C629884233F4AD4"]
+			id: "3459C348AF71A2CF"
+			tasks: [{
+				id: "375348E17BE529C8"
+				type: "item"
+				item: "krate:empty_upgrade"
+			}]
+			rewards: [{
+				id: "6A3AFBD2E92AF7D8"
+				type: "random"
+				table_id: 3795742765022831189L
+			}]
+		}
+		{
+			x: -32.0d
+			y: -9.0d
+			dependencies: ["3459C348AF71A2CF"]
+			id: "5C5A8832D8351F3D"
+			tasks: [{
+				id: "0DCD981A3563AD17"
+				type: "item"
+				item: "krate:hopper_upgrade"
+			}]
+			rewards: [{
+				id: "1BA5A7F5D3E4D7FE"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -32.5d
+			y: -10.0d
+			dependencies: ["3459C348AF71A2CF"]
+			id: "190A232609F02D08"
+			tasks: [{
+				id: "667B18DC6F6CE494"
+				type: "item"
+				item: "krate:collect_upgrade"
+			}]
+			rewards: [{
+				id: "218CD906E8261004"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -32.0d
+			y: -11.0d
+			dependencies: ["3459C348AF71A2CF"]
+			id: "4C07815DDD3F0942"
+			tasks: [{
+				id: "410F2F946F920C9F"
+				type: "item"
+				item: "krate:shulker_upgrade"
+			}]
+			rewards: [{
+				id: "357783212485562D"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+		{
+			x: -31.0d
+			y: -11.5d
+			dependencies: ["3459C348AF71A2CF"]
+			id: "50584BD2B0C14600"
+			tasks: [{
+				id: "7568A6B75EFA4175"
+				type: "item"
+				item: "krate:compacting_upgrade"
+			}]
+			rewards: [{
+				id: "785C77478499F0FA"
+				type: "random"
+				table_id: 5666581215129303126L
+			}]
+		}
+	]
+}
