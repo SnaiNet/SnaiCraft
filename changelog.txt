@@ -1,3 +1,23 @@
+1.3.4
+	Added:
+		Unique Enchantments Base
+		
+	Updated:
+		Architectury - 1.26.40 -> 1.26.42
+		Dungeon Crawl - 2.3.4 -> 2.3.5
+		Immersive Engineering - 5.0.6-141 -> 5.0.7-143
+		Mekanism - 10.0.24.453 -> 10.1.0.455
+		Mekanism Additions - 10.0.24.453 -> 10.1.0.455
+		Mekanism Generators - 10.0.24.453 -> 10.1.0.455
+		Mekanism Tools - 10.0.24.453 -> 10.1.0.455
+		Occultism - 1.23.6 -> 1.23.7
+	
+	Removed:
+		Enchantment Descriptions
+		
+	Changed:
+		- Made chunk to ore crafting for gold and iron give vanilla versions of the ore for compatibility
+
 1.3.3
 	Updated:
 		FORGE - 36.2.20 -> 36.2.22
