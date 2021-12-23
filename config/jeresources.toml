@@ -1,5 +1,5 @@
 disableLootManagerReloading = false
-hiddenTabs = []
+hiddenTabs = ["enchantment"]
 #Range: 1 ~ 4
 itemsPerRow = 4
 enchantsBlacklist = ["flimflam", "soulBound"]
