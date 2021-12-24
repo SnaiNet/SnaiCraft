@@ -13,13 +13,41 @@ onEvent('recipes', event => {
   })
 
 
-	//gold and iron chunks to vanilla ore
-	event.remove({id: 'emendatusenigmatica:ore_from_chunk_crafting/gold'})
-	event.remove({id: 'emendatusenigmatica:ore_from_chunk_crafting/iron'})
-	
-	event.shapeless('minecraft:gold_ore', ['#forge:ores/gold'])
-	event.shapeless('minecraft:iron_ore', ['#forge:ores/iron'])
-	
-
-
+	// Add support for missing emendatusenigmatica ores/chunks in the mechanical squeezer
+	['iron', 'gold', 'aluminum'].forEach(ore => {
+		event.custom({
+			'type': 'integrateddynamics:mechanical_squeezer',
+			'item': `emendatusenigmatica:${ore}_ore`,
+			'result': {
+				'items': [
+					{
+						'tag': `forge:dusts/${ore}`,
+						'count': 2
+					},
+					{
+						'tag': `forge:dusts/${ore}`,
+						'chance': 0.5
+					}
+				]
+			},
+			'duration': 40
+		})
+		event.custom({
+			'type': 'integrateddynamics:mechanical_squeezer',
+			'item': `emendatusenigmatica:${ore}_chunk`,
+			'result': {
+				'items': [
+					{
+						'tag': `forge:dusts/${ore}`,
+						'count': 2
+					},
+					{
+						'tag': `forge:dusts/${ore}`,
+						'chance': 0.5
+					}
+				]
+			},
+			'duration': 40
+		})
+	})
 })
